@@ -1,0 +1,299 @@
+.postpaid-carousel-card {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 1rem;
+  /* margin-left: 30px; */
+  margin-bottom: 20px;
+  background-image: linear-gradient(to bottom, #0b010d, #040235);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  /* position: absolute; */
+  /* transform: translate(-50%, -50%);
+  top: 53.5%;
+  left: 60.7%; */
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  transition: all 250ms;
+}
+
+.postpaid-carousel-card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+  border-image-source: conic-gradient(
+    in oklch from var(--gradient-angle),
+    var(--purple),
+    var(--orange),
+    var(--yellow),
+    var(--blue),
+    var(--purple)
+  );
+  border-image-slice: 1 3 1 1; /* Important for animation */
+  animation: spin 2s linear infinite;
+}
+
+:root {
+  --black: oklch(17.7% 0.105 262.48); /* Adjust as needed */
+  --purple: oklch(60% 0.37 294.7); /* Adjust as needed */
+  --orange: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --yellow: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --blue: oklch(37.33% 0.1751 332.82); /* Adjust as needed */
+  --black-alpha-50: color-mix(in oklch, var(--black), transparent);
+  --pink-purple: #260783; /* Your desired gradient start color */
+  --pink-magenta: #0f0b0f; /* Your desired gradient end color */
+}
+
+@property --gradient-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
+}
+
+@keyframes spin {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+.postpaid-text-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  gap: 2px;
+}
+
+.postpaid-card-main-heading {
+  margin: 0;
+  font-weight: 500;
+  color: white;
+  font-size: 26.1px;
+  line-height: 31.2px;
+}
+.postpaid-card-desc-heading {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 14.2px;
+  line-height: 18px;
+}
+
+.postpaid-card-price-btn {
+  width: 278px;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 0.75rem;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19px;
+  transition: all 0.2s;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: black;
+  z-index: 1;
+}
+
+.postpaid-card-price-btn::after,
+.postpaid-card-price-btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.postpaid-card-price-btn::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+.postpaid-card-price-btn::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background-image: linear-gradient(
+    172deg,
+    rgba(38, 3, 179, 0.5) 50%,
+    /* 50% opacity */ rgba(19, 7, 188, 0.5) 80%,
+    /* 50% opacity */ rgba(11, 0, 83, 0.5) 100% /* 50% opacity */
+  );
+
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.postpaid-card-price-btn:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+  color: whitesmoke;
+}
+
+.postpaid-card-price-btn:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+.postpaid-card-price-btn:hover {
+  color: white;
+}
+
+.postpaid-card-price-btn:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+.postpaid-card-divider {
+  width: 135px;
+  background-color: rgba(118, 119, 128, 1);
+  height: 1px;
+  transform: translateX(50%);
+  margin-top: 30px;
+}
+
+.postpaid-card-mid-section-heading {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.postpaid-card-mid-section-details {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #b5b5ba;
+  line-height: 17px;
+}
+
+.postpaid-card-footer {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+.postpaid-card-feature {
+  display: flex;
+  gap: 9px;
+  color: white;
+  font-size: 13.2px;
+  line-height: 19px;
+}
+
+/* For viewport width up to 768px */
+@media only screen and (max-width: 768px) {
+  .postpaid-carousel-card {
+    width: 70%; /* Adjust width for smaller screens */
+    margin-left: auto; /* Center the card horizontally */
+    margin-right: auto;
+    margin-top: 15px; /* Adjust margin top for smaller screens */
+    margin-bottom: 15px; /* Adjust margin bottom for smaller screens */
+    padding: 12px 30px; /* Adjust padding for smaller screens */
+  }
+
+  .postpaid-card-main-heading {
+    font-size: 22px; /* Adjust font size for smaller screens */
+    line-height: 26px; /* Adjust line height for smaller screens */
+  }
+
+  .postpaid-card-desc-heading {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    line-height: 16px; /* Adjust line height for smaller screens */
+  }
+
+  .postpaid-card-price-btn {
+    width: 220px; /* Adjust button width for smaller screens */
+    height: 40px; /* Adjust button height for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
+    line-height: 18px; /* Adjust line height for smaller screens */
+  }
+
+  .postpaid-card-divider {
+    width: 100px; /* Adjust width for smaller screens */
+    margin-top: 20px; /* Adjust margin top for smaller screens */
+  }
+
+  .postpaid-card-mid-section-heading {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    margin-bottom: 6px; /* Adjust margin bottom for smaller screens */
+  }
+
+  .postpaid-card-mid-section-details {
+    font-size: 11px; /* Adjust font size for smaller screens */
+  }
+
+  .postpaid-card-footer {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .postpaid-card-feature {
+    font-size: 11px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* For viewport width up to 400px */
+@media only screen and (max-width: 400px) {
+  .postpaid-carousel-card {
+    /* width: 95%; Adjust width for smallest screens */
+    margin-left: auto; /* Center the card horizontally */
+    margin-right: auto;
+    margin-top: 10px; /* Adjust margin top for smallest screens */
+    margin-bottom: 10px; /* Adjust margin bottom for smallest screens */
+    padding: 8px 30px; /* Adjust padding for smallest screens */
+    width: 75%;
+  }
+
+  .postpaid-card-main-heading {
+    font-size: 18px; /* Adjust font size for smallest screens */
+    line-height: 22px; /* Adjust line height for smallest screens */
+  }
+
+  .postpaid-card-desc-heading {
+    font-size: 10px; /* Adjust font size for smallest screens */
+    line-height: 14px; /* Adjust line height for smallest screens */
+  }
+
+  .postpaid-card-price-btn {
+    width: 200px; /* Adjust button width for smallest screens */
+    height: 35px; /* Adjust button height for smallest screens */
+    font-size: 14px; /* Adjust font size for smallest screens */
+    line-height: 16px; /* Adjust line height for smallest screens */
+  }
+
+  .postpaid-card-divider {
+    width: 80px; /* Adjust width for smallest screens */
+    margin-top: 15px; /* Adjust margin top for smallest screens */
+  }
+
+  .postpaid-card-mid-section-heading {
+    font-size: 10px; /* Adjust font size for smallest screens */
+    margin-bottom: 4px; /* Adjust margin bottom for smallest screens */
+  }
+
+  .postpaid-card-mid-section-details {
+    font-size: 9px; /* Adjust font size for smallest screens */
+  }
+
+  .postpaid-card-footer {
+    font-size: 10px; /* Adjust font size for smallest screens */
+  }
+
+  .postpaid-card-feature {
+    font-size: 9px; /* Adjust font size for smallest screens */
+  }
+}

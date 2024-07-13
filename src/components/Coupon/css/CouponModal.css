@@ -1,0 +1,124 @@
+.coupon-modal-main {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(36, 32, 32);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.coupon-modal-close {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.coupon-details-modal {
+  min-width: 20% !important;
+  height: fit-content;
+  background-color: white;
+  border-radius: 1rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  padding: 50px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-modal-title {
+  border: 1px;
+  margin-top: -1.5rem;
+  border-radius: 0.75rem;
+  color: black;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.coupon-details-container {
+  all: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.coupon-table-desc {
+  border: 1px solid #c7c8cc;
+  border-radius: 0.25rem;
+  padding: 5px 8px;
+}
+
+.coupon-table-data {
+  border: 1px solid #c7c8cc;
+  border-radius: 0.25rem;
+  padding: 5px 8px;
+}
+
+.coupon-modal-close {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.coupon-modal-close:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .coupon-modal-close {
+    /* margin-left: 0; */
+    margin-top: 10px;
+  }
+
+  .coupon-details-modal {
+    padding: 20px;
+  }
+
+  .coupon-modal-title {
+    font-size: 16px;
+  }
+
+  .coupon-table-data,
+  .coupon-table-desc {
+    font-size: 14px;
+  }
+  .couponsection {
+    height: 2vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .coupon-details-modal {
+    padding: 15px;
+  }
+
+  .coupon-modal-title {
+    font-size: 14px;
+  }
+
+  .coupon-table-data,
+  .coupon-table-desc {
+    font-size: 12px;
+  }
+}

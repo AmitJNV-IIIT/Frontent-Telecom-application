@@ -1,0 +1,82 @@
+[
+  {
+    "category": "High-Speed Internet",
+    "speed": 100,
+    "voiceLimit": "Unlimited",
+    "validity": 30,
+    "price": 299,
+    "otts": ["netflix", "disney", "amazon"]
+  },
+  {
+    "category": "Business Plan",
+    "speed": 250,
+    "voiceLimit": "500 minutes",
+    "validity": 60,
+    "price": 499,
+    "otts": ["netflix", "disney"]
+  },
+  {
+    "category": "Premium Package",
+    "speed": 500,
+    "voiceLimit": "Unlimited",
+    "validity": 90,
+    "price": 699,
+    "otts": ["netflix", "disney", "amazon"]
+  },
+  {
+    "category": "Family Bundle",
+    "speed": 75,
+    "voiceLimit": "200 minutes",
+    "validity": 45,
+    "price": 599,
+    "otts": ["netflix", "disney", "amazon"]
+  },
+  {
+    "category": "Student Plan",
+    "speed": 50,
+    "voiceLimit": "100 minutes",
+    "validity": 30,
+    "price": 199,
+    "otts": ["netflix", "disney", "amazon"]
+  },
+  {
+    "category": "Basic Internet",
+    "speed": 20,
+    "voiceLimit": "No voice service",
+    "validity": 30,
+    "price": 99,
+    "otts": ["netflix", "disney", "amazon"]
+  },
+  {
+    "category": "Gigabit Connection",
+    "speed": 1000,
+    "voiceLimit": "Unlimited",
+    "validity": 60,
+    "price": 999,
+    "otts": ["netflix", "disney", "amazon"]
+  },
+  {
+    "category": "Small Business",
+    "speed": 150,
+    "voiceLimit": "300 minutes",
+    "validity": 45,
+    "price": 199,
+    "otts": ["netflix", "disney", "amazon"]
+  },
+  {
+    "category": "Family Plus",
+    "speed": 100,
+    "voiceLimit": "Unlimited",
+    "validity": 60,
+    "price": 799,
+    "otts": ["netflix", "disney", "amazon"]
+  },
+  {
+    "category": "Weekend Special",
+    "speed": 30,
+    "voiceLimit": "No voice service",
+    "validity": 7,
+    "price": 59,
+    "otts": ["netflix", "disney", "amazon"]
+  }
+]

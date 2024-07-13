@@ -1,0 +1,46 @@
+.skeleton-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skeleton-image {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(90deg, #8a2be2 0%, #ff00ff 100%), #ccc;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  animation: pulse 0.6s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Media Query for tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .skeleton-image {
+    height: 250px; /* Slightly reduced height */
+    border-radius: 15px; /* Smaller radius for smaller screens */
+  }
+}
+
+/* Media Query for smaller mobile devices (max-width: 400px) */
+@media (max-width: 400px) {
+  .skeleton-loader {
+    padding: 10px; /* Add padding around the loader for better spacing */
+  }
+  .skeleton-image {
+    margin-top: 20px;
+    height: 150px; /* Further reduced height for very small devices */
+    border-radius: 10px;
+    margin-bottom: -10px; /* Even smaller radius */
+  }
+}

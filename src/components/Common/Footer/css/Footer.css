@@ -1,0 +1,223 @@
+.footer {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to bottom, #0b010d 50%, #040235);
+}
+
+.footer-content {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footer-about-wrapper {
+  height: 50px;
+  width: 150px;
+  padding-left: 10px;
+  margin-top: -5px;
+  font-size: small;
+}
+
+.footer-col-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 25%;
+}
+
+.footer-customer-support {
+  height: 50px;
+  width: 200px;
+  margin-top: -5px;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-copyright {
+  height: 50px;
+  width: 200px;
+  margin-top: -5px;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(174, 172, 172);
+}
+
+.footer-col-b {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.footer-col-b-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 15px;
+}
+.footer-link-hover:hover {
+  color: violet;
+}
+
+.footer-col-d-icon {
+  transition: transform 0.2s; /* Add transition for smooth scaling */
+}
+
+.footer-col-d-icon:hover {
+  transform: scale(1.1); /* Enlarge the icon by 10% on hover */
+}
+
+.footer-col-c {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.footer-col-d {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.terms-conditions {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.terms-conditions > div {
+  margin-right: 10px;
+  color: rgb(174, 172, 172);
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  cursor: pointer;
+}
+
+.download-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  cursor: pointer;
+}
+
+.footer-copyright-col-d {
+  display: none;
+}
+/* Custom CSS to make the SweetAlert2 info icon transparent */
+.swal2-icon.swal2-info {
+  border-color: white !important;
+  width: auto;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 5%;
+    padding-right: 0;
+  }
+  .social-media-icons {
+    padding-left: 0px !important;
+  }
+  .line-section {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    height: auto;
+  }
+
+  .footer-copyright {
+    display: none;
+  }
+  .line-section {
+    display: none !important;
+  }
+  .footer-customer-support {
+    display: none;
+  }
+  .exitel-logo {
+    padding-left: 7px;
+  }
+  .footer-about-wrapper {
+    height: 50px;
+    width: 150px;
+    padding-left: 0px;
+    margin-top: -5px;
+    font-size: small;
+    text-align: center;
+  }
+
+  .footer-col-a {
+    height: 6rem;
+    width: auto;
+    align-items: center;
+  }
+  .footer-col-d {
+    width: 100%;
+  }
+  .footer-col-d > p {
+    padding-left: 0px !important;
+  }
+  .social-media-icons {
+    padding-left: 0px !important;
+  }
+  .terms-conditions {
+    padding-left: 0px;
+    justify-content: flex-start;
+  }
+  .footer-copyright-col-d {
+    height: 50px;
+    width: auto;
+    margin-top: -5px;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: flex-start;
+    color: rgb(174, 172, 172);
+  }
+}
+
+@media only screen and (max-device-width: 834px) and (min-device-width: 600px) {
+  .download-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 5%;
+    padding-right: 0;
+  }
+  .footer-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .terms-conditions {
+    margin-top: 0.5vh;
+    flex-direction: column;
+    align-items: center;
+  }
+}

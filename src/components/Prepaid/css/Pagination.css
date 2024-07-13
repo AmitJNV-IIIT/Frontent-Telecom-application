@@ -1,0 +1,177 @@
+.pagination-prepaid-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  gap: 20px;
+  color: grey;
+}
+
+.prepaidpage-btn-group-prev {
+  font-family: inherit;
+  font-size: 14px;
+  background-color: black;
+  color: darkgray;
+  padding: 0.6em 0.9em;
+  padding-left: 0.9em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.prepaidpage-btn-group-prev span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+  color: darkgray;
+}
+
+.prepaidpage-btn-group-prev svg {
+  display: block;
+  transform: rotate(-70deg);
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.prepaidpage-btn-group-prev:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.prepaidpage-btn-group-prev:hover svg {
+  transform: translateX(1.2em) rotate(-135deg) scale(1.1);
+}
+
+.prepaidpage-btn-group-prev:hover span {
+  transform: translateX(5em);
+}
+
+.prepaidpage-btn-group-prev:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+.prepaidpage-btn-group-next {
+  font-family: inherit;
+  font-size: 14px;
+  background-color: black;
+  color: darkgray;
+  padding: 0.6em 0.9em;
+  padding-left: 0.9em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.prepaidpage-btn-group-next span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+  color: darkgray;
+}
+
+.prepaidpage-btn-group-next svg {
+  display: block;
+  transform: rotate(-70deg);
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.prepaidpage-btn-group-next:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.prepaidpage-btn-group-next:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.prepaidpage-btn-group-next:hover span {
+  transform: translateX(5em);
+}
+
+.prepaidpage-btn-group-next:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.prepaid-page-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.prepaid-page-number {
+  border: unset;
+  border-radius: 20%;
+  background-color: rgba(100, 100, 100, 0.3);
+  width: 20px;
+  height: 30px;
+  color: darkgray;
+  margin-top: 3px;
+}
+
+/* For viewport width up to 768px */
+@media only screen and (max-width: 768px) {
+  .pagination-prepaid-div {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 10px; /* Reduce gap between items for smaller screens */
+  }
+
+  .prepaidpage-btn-group {
+    font-size: 12px; /* Decrease font size for smaller screens */
+    padding: 0.4em 0.7em; /* Adjust padding for smaller screens */
+  }
+
+  .prepaid-page-number {
+    width: 15px; /* Adjust width for smaller screens */
+    height: 25px; /* Adjust height for smaller screens */
+    font-size: 10px; /* Decrease font size for smaller screens */
+    margin-top: 2px; /* Adjust margin top for smaller screens */
+  }
+}
+
+/* For viewport width up to 400px */
+@media only screen and (max-width: 400px) {
+  .pagination-prepaid-div {
+    gap: 5px; /* Further reduce gap between items for smallest screens */
+  }
+
+  .prepaidpage-btn-group {
+    font-size: 10px; /* Further decrease font size for smallest screens */
+    padding: 0.3em 0.5em; /* Further adjust padding for smallest screens */
+  }
+
+  .prepaid-page-number {
+    width: 12px; /* Further adjust width for smallest screens */
+    height: 20px; /* Further adjust height for smallest screens */
+    font-size: 8px; /* Further decrease font size for smallest screens */
+    margin-top: 1px; /* Further adjust margin top for smallest screens */
+  }
+}

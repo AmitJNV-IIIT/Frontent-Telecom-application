@@ -1,0 +1,49 @@
+.Cards {
+  padding: 20px;
+  /* background-color: white; */
+}
+
+.customTypography {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px; /* Adjust margin as needed */
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.head {
+  margin: 0px;
+}
+
+.container {
+  max-height: 2000px; /* Adjust the max-height to your desired value */
+  /* overflow-y: auto; Add vertical scroll if content exceeds max-height */
+  background-color: #f2f3f4;
+  margin-top: 40px;
+}
+
+.customBox {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 16px;
+  border-radius: 8px;
+  /* background-color: white; */
+}
+.filters col-8 {
+  /* background-color: white; */
+}
+
+.inputWithShadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 0px !important;
+}
+
+.formdiv {
+  margin: 10px;
+}
+
+.customButton {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}

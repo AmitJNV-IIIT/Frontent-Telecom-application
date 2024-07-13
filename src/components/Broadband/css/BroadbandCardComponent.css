@@ -1,0 +1,178 @@
+.card-broadband {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  padding: 10px;
+  gap: 2rem;
+  width: 581px;
+  height: 55%;
+
+  background-color: rgba(23, 24, 38, 1);
+}
+.card-broadband:hover {
+  filter: brightness(110%);
+}
+
+.card-broadband:hover {
+  transform: translateY(-6px);
+  transition: transform 400ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.carousel {
+  width: 80%;
+  margin: auto;
+  gap: 2rem;
+}
+
+.card-img-main {
+  width: 100%;
+  height: 100%;
+}
+
+.broadband-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+  color: white;
+  text-align: center;
+}
+
+.card-title span {
+  display: inline-block;
+}
+
+.card-descritption {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  /* border-top: 0.5px solid grey;
+  border-bottom: 0.5px solid grey; */
+  /* background: linear-gradient(to right, grey, transparent, grey); */
+}
+
+.card-description {
+  position: relative;
+  text-align: center;
+}
+
+.card-description::before,
+.card-description::after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 30%; /* Adjust the width of the lines */
+  height: 1px; /* Adjust the height of the lines */
+  background-color: grey; /* Change the color of the lines */
+}
+
+.card-description::before {
+  margin-left: -15%; /* Half of the width */
+}
+
+.card-description::after {
+  margin-left: 15%; /* Half of the width */
+}
+
+.card-descritption p {
+  color: gray;
+  font-size: 12px;
+  margin: 5px 0;
+  text-align: left;
+  position: relative;
+}
+
+.tick {
+  color: gray;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.card-button {
+  display: block;
+  width: 100%;
+  position: relative;
+  align-self: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ott-section {
+  display: flex;
+  justify-content: flex-start; /* Align OTT items to the left */
+}
+
+.ott-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px;
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.ott-count {
+  margin-left: 5px; /* Adjust margin for better spacing */
+  font-size: 14px;
+  color: white;
+}
+
+.ott-logos {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+  overflow: hidden; /* Hide overflowing items */
+}
+
+.ott-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px; /* Add margin between items */
+}
+/* .ott-img {
+  width: 30px;
+  height: 30px;
+} */
+.slick-slide > div {
+  margin: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-descritption p {
+    font-size: 10px;
+  }
+
+  .ott-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card-button {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-descritption p {
+    font-size: 9px;
+  }
+
+  .ott-img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .card-button {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,181 @@
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+  display: none;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+}
+.app-top {
+  display: flex;
+  padding-bottom: 3%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.app-left {
+  width: 100%;
+}
+
+.app-right {
+  text-align: center;
+  margin-left: 2vw;
+  margin-top: 3%;
+}
+
+.app-image {
+  width: 100%;
+  height: auto;
+}
+
+.app-below {
+  clear: both;
+  background-color: rgba(30, 22, 48, 1);
+  color: white;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  border-radius: 2vh;
+  padding: 2vh;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rounded-button {
+  border-radius: 10vw; /* adjust this value to your liking */
+}
+
+.login-button {
+  display: flex;
+  border: none;
+  color: white;
+  padding: 2vh 4vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3vh;
+  margin: 1vw 2vh;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2vh;
+  background: linear-gradient(
+    to right bottom,
+    rgb(0, 128, 255),
+    rgb(128, 0, 255)
+  );
+  align-items: center;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+/* Media queries for mobile screens */
+.app-left {
+  display: block;
+}
+
+.app-right {
+  background-color: 'rgba(0, 0, 0, 0.5)';
+  color: white;
+  margin: auto !important;
+}
+.h1ForRegister {
+  padding-top: 15vh !important;
+}
+.app-below {
+  text-align: left;
+
+  align-content: center;
+}
+.registerText:hover {
+  color: purple !important;
+  font-weight: 900 !important;
+}
+.login-p1 {
+  font-size: 15px;
+}
+
+.phoneNumberInput {
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.passwordInput {
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.phoneNumberError {
+  color: red;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.passwordError {
+  color: red;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.earth-image {
+  width: 45vw; /* Set the width of the image */
+  height: auto; /* Set the height of the image */
+  align-self: center;
+  border-radius: 2.5rem;
+  margin-top: 20vh;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .app-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-left {
+    display: none;
+  }
+
+  .app-right {
+    /* background-image: url('../assets/login_page_5.png'); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 2vh;
+    /* padding: 2vw; */
+  }
+  .phoneNumberInput {
+    width: 80% !important;
+  }
+  .passwordInput {
+    width: 80% !important;
+  }
+  .h1ForRegister {
+    padding-top: 7vh !important;
+  }
+  .grid-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-form {
+    margin-top: 2vh;
+  }
+
+  .login-button {
+    margin-top: 2vh;
+  }
+
+  .app-below {
+    margin-top: 2vh;
+    text-align: center;
+  }
+}

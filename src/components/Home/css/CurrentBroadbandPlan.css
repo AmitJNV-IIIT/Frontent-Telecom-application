@@ -1,0 +1,109 @@
+.broadband-container {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-color: black;
+  border-radius: 10px;
+  /* position: relative; */
+  width: 25vw;
+  border: 2px solid #ccc; /* Border color and width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+  padding: 20px; /* Optional: Add padding to create space between content and border */
+  gap: 0px;
+}
+.cbp-no-plan p {
+  text-align: center;
+  font-weight: 600;
+  margin: 5px;
+  color: red;
+}
+.user-home-broadband-image {
+  margin-bottom: 1px; /* Reduce space between the speedometer and the paragraph */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.broadband-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+  gap: opx;
+}
+.broadband-details p {
+  font-weight: 400;
+  margin: 1px; /* Reduce space between paragraphs */
+}
+.broadband-details-fields p,
+h4 {
+  text-align: left;
+  margin: 10px;
+}
+.broadband-details-values p,
+h4 {
+  text-align: right;
+  margin: 10px;
+}
+.cbp-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.reset-button {
+  background: none;
+  border: none;
+  color: #00d9ff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  right: 2px;
+}
+.cbp-recharge-btn {
+  background-color: rgba(22, 2, 33, 1);
+  color: white;
+  margin-right: 10px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  width: 130px;
+}
+.cbp-recharge-btn:hover {
+  background: linear-gradient(to left, rgb(102, 25, 237), rgb(26, 126, 232));
+  font-size: 14px;
+  color: white;
+}
+.info-container p {
+  margin: 5px 0; /* Adjust as needed */
+}
+
+.right {
+  margin: 20px;
+}
+@media only screen and (max-width: 850px) {
+  .broadband-header h3 {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .broadband-container {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-color: black;
+    border-radius: 10px;
+    /* position: relative; */
+    width: 80vw;
+    border: 1px solid #ccc; /* Border color and width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+    padding: 20px; /* Optional: Add padding to create space between content and border */
+    gap: 0px;
+    margin-top: 20px;
+  }
+}

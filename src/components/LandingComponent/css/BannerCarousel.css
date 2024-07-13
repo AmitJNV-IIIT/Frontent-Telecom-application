@@ -1,0 +1,19 @@
+.banner-carousel-container {
+  position: relative;
+}
+
+.text-above-carousel {
+  position: absolute;
+  top: 20px; /* Adjust this value to position the text vertically */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white; /* Adjust color to match your design */
+  z-index: 2; /* Ensure it has a higher z-index than the carousel */
+}
+
+@media (max-width: 650px) {
+  .banner-carousel-component {
+    height: 520px;
+  }
+}

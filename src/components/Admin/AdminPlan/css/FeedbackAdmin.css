@@ -1,0 +1,120 @@
+@import url('../../../../constants/Colors.css');
+.feedback-container-admin {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  overflow-y: hidden;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background: var(--critical-button);
+  box-shadow: 0px 4px 4px 0px;
+}
+
+.user-info-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -1rem;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.feedback-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+}
+
+.feedback-text {
+  margin-right: 8px;
+  margin-top: -1rem;
+  font-size: smaller;
+  font-weight: 200;
+  color: white;
+}
+
+.feedback-name {
+  color: white;
+}
+
+.star-particular {
+  color: goldenrod;
+}
+
+.feedback-description {
+  color: white;
+}
+.feedback-rating {
+  color: white;
+  font-size: 2rem;
+}
+
+.star {
+  font-size: 1.2em;
+  color: #c0c0c0;
+}
+
+.filled {
+  color: #ffd700;
+}
+.feedback-text {
+  margin-right: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  color: var(--price-text);
+
+  font-weight: bold;
+}
+
+.feedback-text.expanded {
+  white-space: normal;
+  color: var(--price-text);
+}
+
+@media only screen and (max-width: 786px) {
+  .feedback-container {
+    width: 100%; /* Adjust width to full width */
+  }
+
+  .user-avatar {
+    width: 40px; /* Reduce avatar size */
+    height: 40px;
+    margin-right: 12px; /* Adjust margin */
+  }
+
+  .feedback-text {
+    margin-right: 4px; /* Adjust margin */
+  }
+
+  .star {
+    font-size: 1em; /* Reduce star size */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .feedback-container {
+    width: 100%; /* Adjust width to full width */
+  }
+
+  .user-avatar {
+    width: 30px; /* Further reduce avatar size */
+    height: 30px;
+    margin-right: 8px; /* Further adjust margin */
+  }
+
+  .feedback-text {
+    margin-right: 2px; /* Further adjust margin */
+  }
+
+  .star {
+    font-size: 0.8em; /* Further reduce star size */
+  }
+}

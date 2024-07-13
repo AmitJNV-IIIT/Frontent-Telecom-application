@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "home_banner1",
+    "image": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/1_home.png",
+    "imageMobile": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/1_home_mob.jpg",
+    "header": "Experience broadband like Never Before",
+    "paragraph": "Feel the difference with committed speed of  <strong>1000 Mbps</strong>",
+    "button": "View our latest plans",
+    "className": "home-carousel-overlay-1",
+    "navigate": "broadband"
+  },
+  {
+    "id": 2,
+    "name": "home_banner2",
+    "image": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/2_home.png",
+    "imageMobile": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/2_home_mob.jpg",
+    "header": "Fast. Faster. Fastest",
+    "paragraph": "Feel the difference with committed speed of  <strong>1000 Mbps</strong>",
+    "button": "View our latest plans",
+    "className": "home-carousel-overlay-2",
+    "navigate": "prepaid"
+  }
+]

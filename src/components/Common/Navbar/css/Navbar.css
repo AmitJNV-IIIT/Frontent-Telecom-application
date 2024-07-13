@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,600');
+
+/*eslint-disable*/
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.text_link-admin-support {
+  display: none;
+}
+
+.navbar-wrapper {
+  height: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: var(--navbar-background); /* Using the main background color */
+  width: max-content;
+  box-shadow:
+    0px 8px 16px 0px rgba(0, 0, 0, 0.2),
+    /* Standard box shadow */ 0 0 50px var(--text-main-heading); /* Additional glowing shadow */
+  z-index: 1;
+  border-radius: 10px; /* Rounded corners for a fancy look */
+}
+.modal-user-details {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+}
+
+.modal-content-user-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--navbar-background);
+  padding: 20px;
+  border-radius: 8px;
+  margin: auto;
+  height: auto !important;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.dropdown-content a {
+  /* Link color according to the color scheme */
+  margin: 4px !important;
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+.name-content {
+  color: var(--text-link) !important;
+}
+.dropdown-content a:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+.dropdown-content {
+  display: block;
+}
+.login img {
+  width: 40px; /* Adjust according to your icon size */
+  height: auto;
+  cursor: pointer;
+}
+
+nav {
+  transition: backdrop-filter 0.3s ease;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #090a18;
+  padding: 0px;
+  justify-content: space-around;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+  box-shadow: 1px 10px 10px rgba(0, 20, 50, 0.1);
+  min-height: 55px;
+  width: 70%;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.306);
+  position: fixed;
+  margin-left: 15%;
+}
+
+nav:hover {
+  backdrop-filter: blur(8px);
+}
+
+nav a {
+  z-index: 2;
+  transition: border 0.2s ease;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  margin-left: 5px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 999px;
+}
+
+.text_link:hover,
+.active-link {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+nav a:hover,
+.photo_link {
+  border: none;
+}
+
+h1 {
+  margin: 30px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.login a {
+  border: none;
+}
+
+.login a:hover {
+  border: none;
+}
+
+.logo img {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.login img {
+  height: 40px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+.toolbar {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .desktop {
+    display: none;
+  }
+
+  .navbar-wrapper {
+    height: 0;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #090a18;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .dropdown-content {
+    margin-left: -15% !important;
+    margin-top: -0.1vh !important;
+  }
+  .modal-content-user-details {
+    width: 80% !important;
+  }
+  .viewcouponmodal {
+    width: 70% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .dropdown-content {
+    margin-left: -7%;
+    margin-top: 1%;
+  }
+  .navbar-wrapper {
+    height: 0;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #090a18;
+  }
+}

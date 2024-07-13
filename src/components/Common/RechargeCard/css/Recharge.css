@@ -1,0 +1,448 @@
+@import url('../../../../constants/Colors.css');
+.prepaid-recharge-main-div {
+  width: 100%;
+}
+.prepaid-recharge-main-div-admin {
+  width: 100%;
+}
+.prepaid-recharge-main-div-admin:hover {
+  cursor: pointer;
+}
+.recharge-wrapper-rechargecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 0.53rem; */
+  margin-left: 3.5rem;
+}
+
+.ott-image {
+  object-fit: cover; /* Or contain */
+  max-width: 50px; /* Optional */
+}
+
+.couponsection {
+  background-color: #17043c;
+  color: white;
+  text-align: center;
+  width: 99%;
+  height: 5vh;
+  padding: 4px 6px;
+  cursor: pointer;
+  margin-top: -6px;
+  margin-bottom: -2px;
+  align-content: center;
+}
+
+.prepaid-recharge-btn {
+  font-size: 1em !important;
+  margin-top: 1vh !important;
+}
+
+.prepaid-recharge-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  /* background-image: linear-gradient(to right, rgb(0, 0, 0), #1b0620); */
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 40px rgba(169, 34, 181, 0.05);
+  border-radius: 15px;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+  min-width: 40rem;
+  margin-top: 1%;
+}
+
+.prepaid-recharge-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.date {
+  display: flex;
+  flex-direction: column;
+}
+.prepaid-recharge-specification-div {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #090a18;
+}
+
+.prepaid-recharge-specification-div p {
+  text-align: center;
+  width: 50%;
+}
+
+.prepaid-card-divider {
+  width: 100%;
+  border: 1px solid #090a18;
+}
+
+.prepaid-text-recharge {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #090a18;
+}
+
+.prepaid-details {
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15.9px;
+  line-height: 20.8px;
+  letter-spacing: 0.96px;
+  background: linear-gradient(
+    172deg,
+    rgba(163, 60, 205, 1) 0%,
+    rgba(115, 70, 172, 1) 56%,
+    rgba(103, 93, 164, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.prepaid-card-image-div {
+  display: flex;
+  gap: 1px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.prepaid-card-image {
+  width: 25px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+.prepaid-recharge-card:hover {
+  /* Existing hover properties */
+
+  transform: scale(1.05);
+  background-image: linear-gradient(to right, #0e054b, #000000);
+  border-radius: 0px;
+  border-width: 1.6px;
+  /* Target specific elements for color change */
+  .prepaid-recharge-specification-div,
+  .prepaid-text-recharge {
+    color: white; /* Change text color to white on hover */
+  }
+
+  /* Add spinning gradient animation to border */
+  border-image-source: conic-gradient(
+    in oklch from var(--gradient-angle),
+    var(--purple),
+    var(--orange),
+    var(--yellow),
+    var(--blue),
+    var(--purple)
+  );
+  border-image-slice: 1 3 1 1; /* Important for animation */
+  animation: spin 2s linear infinite;
+
+  /* Maintain white border on prepaid-card-divider */
+  .prepaid-card-divider {
+    border: 1px solid white;
+  }
+}
+
+/* Define custom properties for colors (optional) and animation properties */
+:root {
+  --black: oklch(17.7% 0.105 262.48); /* Adjust as needed */
+  --purple: oklch(60% 0.37 294.7); /* Adjust as needed */
+  --orange: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --yellow: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --blue: oklch(37.33% 0.1751 332.82); /* Adjust as needed */
+  --black-alpha-50: color-mix(in oklch, var(--black), transparent);
+  --pink-purple: #260783; /* Your desired gradient start color */
+  --pink-magenta: #0f0b0f; /* Your desired gradient end color */
+}
+
+@property --gradient-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
+}
+
+@keyframes spin {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+.edit-delete-button {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  margin-right: 0px !important;
+  width: auto;
+  margin-top: 1rem;
+}
+
+.edit-icon:hover {
+  color: #8000ff;
+}
+.delete-icon:hover {
+  color: #8000ff;
+}
+.prepaid-text-recharge-hidden {
+  display: none;
+}
+
+/* For viewport width up to 768px */
+@media only screen and (max-width: 768px) {
+  .container-prepaid {
+    overflow-x: hidden;
+  }
+  .prepaid-recharge-card {
+    width: 600px; /* Adjust card width for smaller screens */
+    margin-bottom: 15px; /* Reduce margin bottom for smaller screens */
+  }
+
+  .prepaid-recharge-specification-div {
+    margin-left: 5px; /* Adjust margin for specifications */
+    margin-right: 5px;
+  }
+
+  .prepaid-recharge-main-div {
+    /* margin-top: 8rem !important; */
+    width: 89%;
+  }
+  .prepaid-recharge-main-div-admin {
+    /* margin-top: 8rem !important; */
+    width: 89%;
+  }
+  .prepaid-card-image-div {
+    margin-left: 10px; /* Adjust margin for image div */
+  }
+
+  .prepaid-text-recharge {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    line-height: 25px;
+  }
+
+  .prepaid-details {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    line-height: 18px;
+  }
+}
+
+/* For viewport width up to 400px */
+@media only screen and (max-width: 400px) {
+  .container-prepaid {
+    overflow-x: hidden;
+    padding-top: 0px;
+  }
+  .recharge-wrapper-rechargecard {
+    margin-top: 0;
+    margin-left: -46rem;
+  }
+  .prepaid-recharge-card {
+    width: 117%; /* Adjust card width for smallest screens */
+    margin-bottom: 10px; /* Reduce margin bottom further for smallest screens */
+  }
+
+  .prepaid-recharge-main-div {
+    margin-top: 5rem !important;
+    width: 120%;
+  }
+  .prepaid-recharge-main-div-admin {
+    margin-top: 5rem !important;
+    width: 120%;
+  }
+  .recharge-cards {
+    width: full;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscription-recharge-cards {
+    width: full;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prepaid-recharge-main-div {
+    width: full;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prepaid-recharge-main-div-admin {
+    width: full;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prepaid-recharge-specification-div {
+    margin-left: 3px; /* Further adjust margin for specifications */
+    margin-right: 3px;
+  }
+
+  .prepaid-card-image-div {
+    margin-left: 5px; /* Further adjust margin for image div */
+  }
+
+  .prepaid-text-recharge {
+    font-size: 10px; /* Further reduce font size for smallest screens */
+    line-height: 22px;
+  }
+
+  .prepaid-details {
+    font-size: 12px; /* Further reduce font size for smallest screens */
+    line-height: 16px;
+  }
+}
+.prepaid-stacked-images {
+  display: flex;
+  bottom: 10px;
+  left: 10px;
+}
+
+.prepaid-stacked-image-wrapper {
+  margin-right: auto;
+  margin-left: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.7rem;
+}
+
+.recharge-card-third-section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+.stacked-image {
+  width: 5%;
+  height: 5%;
+  flex-shrink: 0;
+  margin-left: -1.25%; /* Adjusted to overlap by 25% */
+  position: relative;
+}
+
+.ribbon-2 {
+  --f: 10px; /* control the folded part*/
+  --r: 15px; /* control the ribbon shape */
+  --t: 10px; /* the top offset */
+
+  position: absolute;
+  inset: var(--t) calc(-1 * var(--f)) auto auto;
+  padding: 0 10px var(--f) calc(10px + var(--r));
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--f)),
+    calc(100% - var(--f)) 100%,
+    calc(100% - var(--f)) calc(100% - var(--f)),
+    0 calc(100% - var(--f)),
+    var(--r) calc(50% - var(--f) / 2)
+  );
+  background-image: linear-gradient(to bottom right, #0080ff, #8000ff);
+  box-shadow: 0 calc(-1 * var(--f)) 0 inset #0005;
+  width: 107px;
+  height: 20px;
+}
+
+.sticker-recharge-card {
+  max-width: 50px;
+  height: 10px;
+  background: lightblue;
+  position: relative;
+  margin-left: 40.4rem;
+
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .prepaid-recharge-card {
+    width: 90%;
+    margin-bottom: 15px;
+    min-width: 30rem;
+    /* Check if this setting makes sense, as it could be too wide for smaller screens */
+  }
+
+  .sticker-recharge-card {
+    max-width: 100%; /* Allows element to expand to container width */
+    margin-left: 30.4rem; /* Reduces left margin to fit smaller screens */
+  }
+
+  .prepaid-recharge-main-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .prepaid-recharge-main-div-admin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .prepaid-recharge-specification-div {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .prepaid-card-image-div {
+    margin-left: 10px;
+  }
+
+  .prepaid-text-recharge {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .prepaid-details {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+/* For viewport width up to 400px */
+@media only screen and (max-width: 430px) {
+  .prepaid-recharge-card {
+    width: 96%;
+    margin-bottom: 10px;
+    min-width: 18rem; /* Again, check the practicality of this setting on very small screens */
+  }
+
+  .sticker-recharge-card {
+    max-width: 100%; /* Allows element to expand to container width */
+    margin-left: 15.4rem; /* Further reduces left margin to fit very small screens */
+  }
+
+  .prepaid-recharge-specification-div {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .prepaid-card-image-div {
+    margin-left: 5px;
+  }
+
+  .prepaid-text-recharge {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .prepaid-details {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .date {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sticker-recharge-card {
+    margin-left: 102%;
+  }
+}

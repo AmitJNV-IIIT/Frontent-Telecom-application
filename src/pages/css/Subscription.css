@@ -1,0 +1,306 @@
+.subscription-heading .text {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.subscription-recharge-specification-div {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #090a18;
+}
+
+.subscription-card-divider {
+  width: 100%;
+  border: 1px solid #090a18;
+}
+
+.subscription-text-recharge {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #090a18;
+}
+
+.subscription-recharge-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  /* background-image: linear-gradient(to right, rgb(0, 0, 0), #1b0620); */
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 40px rgba(169, 34, 181, 0.05);
+  border-radius: 15px;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+  min-width: 40rem;
+  margin-top: 1%;
+}
+
+.subscription-recharge-card:hover {
+  /* Existing hover properties */
+
+  transform: scale(1.05);
+  background-image: linear-gradient(to right, #0e054b, #000000);
+  border-radius: 0px;
+  border-width: 1.6px;
+  /* Target specific elements for color change */
+  .subscription-recharge-specification-div,
+  .subscription-text-recharge {
+    color: white; /* Change text color to white on hover */
+  }
+
+  /* Add spinning gradient animation to border */
+  border-image-source: conic-gradient(
+    in oklch from var(--gradient-angle),
+    var(--purple),
+    var(--orange),
+    var(--yellow),
+    var(--blue),
+    var(--purple)
+  );
+  border-image-slice: 1 3 1 1; /* Important for animation */
+  animation: spin 2s linear infinite;
+
+  /* Maintain white border on prepaid-card-divider */
+  .subscription-card-divider {
+    border: 1px solid white;
+  }
+}
+
+/* Define custom properties for colors (optional) and animation properties */
+:root {
+  --black: oklch(17.7% 0.105 262.48); /* Adjust as needed */
+  --purple: oklch(60% 0.37 294.7); /* Adjust as needed */
+  --orange: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --yellow: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --blue: oklch(37.33% 0.1751 332.82); /* Adjust as needed */
+  --black-alpha-50: color-mix(in oklch, var(--black), transparent);
+  --pink-purple: #260783; /* Your desired gradient start color */
+  --pink-magenta: #0f0b0f; /* Your desired gradient end color */
+}
+
+@property --gradient-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
+}
+
+@keyframes spin {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+.subscription-recharge-main-div {
+  width: 100%;
+}
+
+.subscription-recharge-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.subscription-stacked-image-wrappe {
+  margin-right: auto;
+  margin-left: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.7rem;
+}
+
+.subscription-stacked-images {
+  display: flex;
+  bottom: 10px;
+  left: 10px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.ott-image {
+  object-fit: cover; /* Or contain */
+  max-width: 50px; /* Optional */
+}
+
+.data-subscription {
+  text-align: center;
+  width: 50%;
+}
+
+.subscription-heading {
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  align-items: center;
+  margin-left: 4.5rem;
+  width: 50%;
+}
+
+.col-3-subscription {
+  width: 25%;
+}
+
+.subscription-main {
+  background-image: linear-gradient(to bottom, #0b010d, #040235);
+  /* background-color: #090A18; */
+  overflow-y: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.row-subscription {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.arrow-icon {
+  color: purple !important;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-icon-scaled {
+  transform: scale(1.2);
+}
+
+.pre-footer-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.col-9 {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.col-9 .mobile-plans .header {
+  color: white;
+}
+
+.pre-footer-text {
+  margin-top: 2rem;
+}
+
+.filters-and-reports {
+  margin-left: 19%;
+}
+
+.col-9-subscription {
+  width: 50%;
+  margin-top: 1%;
+}
+
+.filterList {
+  display: none;
+}
+.NotFound {
+  font-size: 2rem;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.prepaid-recharge-card-subscription {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  /* background-image: linear-gradient(to right, rgb(0, 0, 0), #1b0620); */
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 40px rgba(169, 34, 181, 0.05);
+  border-radius: 15px;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+  min-width: 40rem;
+  margin-top: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+  .col-9-subscription {
+    width: 60%;
+    margin-top: 4%;
+  }
+
+  .filter .subscription-recharge-card,
+  .prepaid-recharge-card-subscription {
+    min-width: auto; /* Makes width more responsive */
+    width: 90%; /* Increase width to use more of the screen */
+  }
+
+  .subscription-heading {
+    margin-top: 3rem;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .filters-and-reports {
+    margin-left: 10%; /* Adjust left margin */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .col-3,
+  .col-3-subscription {
+    width: 0;
+    display: none; /* Hide the column */
+  }
+
+  .col-9-subscription {
+    width: 80%; /* Increase width to take over hidden column space */
+    margin-top: 2%; /* Adjust margin */
+    margin-left: 10%; /* Centering the element */
+  }
+
+  .row-subscription {
+    width: 90%;
+  }
+
+  .subscription-heading {
+    position: fixed;
+
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+    justify-content: space-around; /* Adjust the spacing of items */
+  }
+
+  .subscription-recharge-card,
+  .prepaid-recharge-card-subscription {
+    min-width: auto; /* Makes the width responsive */
+    width: 95%; /* Increase width to utilize more screen space */
+  }
+
+  .filterList {
+    display: block; /* Display the filter list that is hidden on larger screens */
+  }
+
+  .recharge-wrapper-subscription {
+    margin-top: 45%;
+  }
+  .data-subscription {
+    font-size: 1em;
+  }
+  .subscription-text-recharge {
+    font-size: 1em;
+  }
+}

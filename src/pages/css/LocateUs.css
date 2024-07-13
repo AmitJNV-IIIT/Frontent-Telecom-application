@@ -1,0 +1,45 @@
+.locate-page {
+  background-image: linear-gradient(to bottom, #0b010d, #040235);
+  height: fit-content;
+  margin-top: 8%;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  position: relative;
+  font-size: 1.8rem;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+}
+
+.background-div {
+  margin: 1.5rem 1rem;
+  margin-bottom: 0;
+  /* margin-top: 0rem; */
+}
+
+@media screen and (max-width: 908px) {
+  .heading {
+    margin-top: 7rem;
+  }
+  .background-div {
+    margin: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 7rem;
+  }
+
+  .background-div {
+    margin: 0.5rem;
+    margin-top: 0.8rem;
+  }
+}

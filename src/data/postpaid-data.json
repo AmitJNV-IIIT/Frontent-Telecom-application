@@ -1,0 +1,64 @@
+[
+  {
+    "price": 199,
+    "data": 1,
+    "validity": 30,
+    "tag": "Most"
+  },
+  {
+    "price": 299,
+    "data": 2,
+    "validity": 30,
+    "tag": "Most Popular"
+  },
+  {
+    "price": 399,
+    "data": 3,
+    "validity": 30,
+    "tag": "Most "
+  },
+  {
+    "price": 399,
+    "data": 1,
+    "validity": 90,
+    "tag": "Most "
+  },
+  {
+    "price": 249,
+    "data": 1.5,
+    "validity": 30,
+    "tag": "Most "
+  },
+
+  {
+    "price": 349,
+    "data": 1.5,
+    "validity": 60,
+    "tag": "Most "
+  },
+  {
+    "price": 2199,
+    "data": 3,
+    "validity": 365,
+    "tag": "Most "
+  },
+  {
+    "price": 1499,
+    "data": 1.5,
+    "validity": 365,
+    "tag": "Most"
+  },
+
+  {
+    "price": 699,
+    "data": 1,
+    "validity": 180,
+    "tag": "Most "
+  },
+  {
+    "price": 1399,
+    "data": 1,
+    "validity": 365,
+    "tag": "Most "
+  }
+]

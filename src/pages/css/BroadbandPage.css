@@ -1,0 +1,135 @@
+.broadband-page {
+  background-image: linear-gradient(to bottom, #0b010d, #040235);
+  height: fit-content;
+  /* margin-top:50px; */
+  width: 100vw;
+}
+
+/* .sub-navbar{
+  margin-top: 5% !important;
+} */
+.connection-detail {
+  position: absolute;
+  right: 8vh;
+  font-size: 0.8rem;
+  color: #404c5d;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.connection-detail img {
+  width: 4vh;
+  height: 4vh;
+}
+
+.connection-detail:hover {
+  color: #1c242c;
+}
+
+.background-div-broadband {
+  /* background: white; */
+  /* margin: 1.5rem 1rem; */
+  /* border: solid #404c5d 1px; */
+  /* border-radius: 8px; */
+  margin-top: 0rem;
+  margin-left: 1.5%;
+  margin-right: 2%;
+}
+
+.text-content {
+  margin-bottom: 0.2rem;
+}
+.broadband-content-div {
+  margin: 0rem 2rem;
+  margin-top: 1rem;
+  /* border: solid #404c5d 1px; */
+  /* border-radius: 8px; */
+  padding: 1rem 1rem;
+  /* background-color: rgb(242, 243, 248); */
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.content-div p {
+  color: #909399;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  font-weight: 10;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .connection-detail {
+    right: 6vh;
+  }
+
+  .connection-detail img {
+    width: 3vh;
+    height: 3vh;
+  }
+
+  .background-div-broadband {
+    /* margin: 2rem; */
+    margin-top: -0.5rem;
+    margin-left: 2%;
+  }
+
+  .content-div {
+    margin: 1rem;
+    margin-top: 3rem;
+    padding: 0rem 1rem;
+  }
+
+  .content-div h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-div p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .connection-detail {
+    right: 4vh;
+  }
+
+  .connection-detail img {
+    width: 2.5vh;
+    height: 2.5vh;
+  }
+
+  .background-div-broadband {
+    margin: 1.5rem;
+    margin-top: -0.5rem;
+  }
+
+  .content-div {
+    margin: 0.5rem;
+    margin-top: 3rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .content-div h2 {
+    font-size: 1.2rem;
+  }
+
+  .content-div p {
+    font-size: 0.8rem;
+  }
+}

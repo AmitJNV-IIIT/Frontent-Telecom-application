@@ -1,0 +1,8 @@
+.broadband-plan-card {
+  background-color: #f2f3f4;
+}
+
+.container {
+  max-height: 2000px; /* Adjust the max-height to your desired value */
+  /* overflow-y: auto; Add vertical scroll if content exceeds max-height */
+}

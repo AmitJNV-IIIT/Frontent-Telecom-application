@@ -1,0 +1,113 @@
+/* HomeCouponModal.css */
+
+/* Overlay */
+.home-coupon-modal-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(36, 32, 32);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* Modal */
+.home-coupon-modal {
+  background-color: #fff; /* White background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  width: 388px;
+}
+
+/* Modal Header */
+.home-coupon-modal-header {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-coupon-buttons {
+  display: flex;
+  margin: 18px 102px;
+  margin-top: -30px;
+}
+
+.home-coupon-button {
+  padding: 1px 9px;
+  color: black;
+  margin-right: auto;
+  font-size: 24px;
+  font-style: initial;
+}
+
+/* Close Modal Icon */
+.coupon-modal-close {
+  cursor: pointer;
+  display: flex;
+
+  align-items: end;
+  flex-direction: column;
+}
+
+/* Close Modal Icon Position */
+.coupon-modal-close svg {
+  font-size: 24px;
+}
+.apply-coupon-modal {
+  background: #201329; /* Purple background */
+  color: #fff; /* White text color */
+  padding: 8px 16px;
+  cursor: pointer;
+
+  /* transition: all 0.3s; */
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.apply-coupon-modal:hover {
+  background: linear-gradient(90deg, #347ae4 0%, #361d7e 70.5%);
+  /* border: 1px solid #315cfd; */
+}
+
+/* Apply Coupon Modal Title */
+.apply-plan-coupon-title {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: inherit;
+  margin: 8px 7px;
+}
+
+.apply-coupon-modal p {
+  /* margin: 0;
+    font-size: 14px;
+    color: #666;  */
+  font-size: 18px;
+  font-weight: 500;
+  font-style: inherit;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+/* Apply Coupon Button */
+.apply-coupon-btn {
+  background-color: #201329; /* Purple background */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 2px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+}
+
+.apply-coupon-btn:hover {
+  background-color: #4b39cc; /* Darker purple on hover */
+}

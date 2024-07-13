@@ -1,0 +1,68 @@
+.admin-navbar {
+  background-color: #090a18e5;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.306);
+  /* border-radius: 2px; */
+  /* position: fixed; */
+}
+
+.excitel-title {
+  flex-grow: 1;
+}
+
+.navbar-links {
+  display: flex;
+  margin-left: 13%;
+  margin-right: 15%;
+  padding: 3%;
+}
+.nav {
+  margin: 1% 14% 1% 17%;
+}
+
+.profile {
+  margin-right: 15%;
+}
+
+.nav-link {
+  /* margin: 20px; */
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 3%;
+}
+
+.profile-icon {
+  color: #1a1818;
+  margin-right: 15%;
+  margin-bottom: 4vh;
+}
+
+.admin-toolbar {
+  transition: backdrop-filter 0.3s ease;
+  display: flex;
+  padding: 2px;
+  background-color: #090a18e5;
+  margin: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.306);
+  justify-content: space-around;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+  box-shadow: 1px 10px 10px rgba(0, 20, 50, 0.1);
+  width: 75%;
+  height: 10vh;
+  align-items: center;
+  border-radius: 10rem;
+}
+
+.admin-navbar {
+  background-color: black; /* Change background color to black
+  }
+ 
+  .navbar-link {
+    margin-right: 21px; /* Add padding between links */
+}
+
+.spacer {
+  flex-grow: 1; /* Push profile icon to the right */
+}

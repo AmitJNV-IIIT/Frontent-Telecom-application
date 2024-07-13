@@ -1,0 +1,324 @@
+@import url('../../../constants/Colors.css');
+.plans-container {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.3333% - 20px), 1fr));
+
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+}
+.PackageName {
+  text-align: left;
+}
+.plan-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.plan-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1001;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.card-a:hover,
+.card-b:hover,
+.card-c:hover,
+.card-d:hover {
+  /* Apply shadow on hover */
+  background-color: white;
+  /* color: black; */
+}
+
+.card-a,
+.card-b,
+.card-c,
+.card-d {
+  /* Add transition for background-color and color properties */
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+}
+.card-a:hover .PackageName,
+.card-b:hover .PackageName,
+.card-c:hover .PackageName,
+.card-d:hover .PackageName {
+  color: white; /* Change text color to white on hover */
+}
+
+.card-a:hover .package-description,
+.card-b:hover .package-description,
+.card-c:hover .package-description,
+.card-d:hover .package-description {
+  color: white; /* Change text color to white on hover */
+}
+.card-a:hover .chipstick,
+.card-b:hover .chipstick,
+.card-c:hover .chipstick,
+.card-d:hover .chipstick {
+  color: white !important;
+}
+
+/* Ensure other elements change to black on hover except for chipstick */
+.card-a:hover *,
+.card-b:hover *,
+.card-c:hover *,
+.card-d:hover * {
+  color: black !important;
+}
+
+.card-a:hover .prepaid-button,
+.card-b:hover .prepaid-button,
+.card-c:hover .prepaid-button,
+.card-d:hover .prepaid-button {
+  background-color: black; /* Change button background color to black on hover */
+  color: white !important; /* Change button text color to white on hover */
+}
+/* .prepaid-button:hover, .postpaid-button:hover, .broadband-button:hover {
+  background-color: purple;
+  color: white;
+} */
+.card-a:hover .packbuybtn,
+.card-b:hover .packbuybtn,
+.card-c:hover .packbuybtn,
+.card-d:hover .packbuybtn {
+  color: white !important;
+}
+.card-a:hover .packbuybtnrevert,
+.card-b:hover .packbuybtnrevert,
+.card-c:hover .packbuybtnrevert,
+.card-d:hover .packbuybtnrevert {
+  color: black !important;
+  background-color: black !important;
+}
+
+.chipstick {
+  font-weight: 900;
+  width: 9vw !important;
+  text-align: center !important;
+  height: 3vh !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-width: 120px;
+}
+.package-description {
+  font-size: 15px;
+  margin-top: 1px;
+}
+
+.buy-button {
+  width: 300px;
+  height: 50px;
+}
+
+.availability {
+  color: rgb(0, 170, 255);
+  font-size: 16px;
+  text-align: center;
+}
+
+.logo-and-offer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.offer-logo {
+  width: 25px;
+  height: auto;
+}
+
+.offer-description {
+  margin-left: 10px;
+}
+
+.broadband-container-landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+  gap: 27px;
+}
+
+.first-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.card-a {
+  margin-bottom: auto;
+  height: 725px;
+}
+
+.card-d {
+  margin-bottom: auto;
+  height: 725px;
+}
+
+.card-b {
+  margin-bottom: auto;
+}
+
+.main-plan-section {
+  width: 100% !important;
+}
+.card-1-a {
+  margin-bottom: auto;
+}
+
+.broadbandchild-item {
+  display: flex;
+  flex: 1;
+  background-color: grey;
+  box-shadow: '0px 4px 10px rgba(0,0,0,0.1)';
+  padding: '10px';
+  border-radius: '8px';
+  max-width: '400px';
+  margin-bottom: '4px';
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .plans-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-left: 10%;
+    margin-top: -4vh !important;
+  }
+  .main-plan-section {
+    width: 80% !important;
+  }
+  .buy-button {
+    width: 100%;
+    height: 40px; /* Smaller button for smaller screens */
+  }
+
+  .package-description,
+  .availability {
+    font-size: 14px; /* Slightly smaller text */
+  }
+
+  .logo-and-offer {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .offer-logo {
+    width: 20px;
+  }
+
+  .offer-description {
+    margin-left: 5px;
+    margin-top: 5px; /* Adjust spacing when stacked */
+  }
+
+  .first-two,
+  .broadband-container-landing-page {
+    flex-direction: column;
+  }
+
+  .card-a,
+  .card-b,
+  .card-c {
+    height: auto;
+    width: 67%; /* Adjust height to be auto on smaller screens */
+  }
+
+  .card-d {
+    height: auto;
+    margin-left: -9%;
+    width: 78%;
+  }
+  .card-a,
+  .card-b {
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .plans-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    padding: 5px;
+    margin-top: 0vh !important;
+  }
+  .card-a,
+  .card-b {
+    margin-top: 5vh;
+  }
+  .buy-button,
+  .logo-and-offer,
+  .package-description,
+  .availability {
+    width: 100%; /* Full width elements */
+  }
+  .main-plan-section {
+    width: 100% !important;
+  }
+  .buy-button {
+    height: 35px; /* Even smaller button */
+  }
+
+  .package-description,
+  .availability {
+    font-size: 13px; /* Smaller font size for readability */
+  }
+
+  .offer-logo {
+    width: 18px;
+  }
+
+  .offer-description {
+    font-size: 12px; /* Smaller description font size */
+    margin: 0; /* Reduce margin */
+  }
+
+  .first-two,
+  .broadband-container-landing-page {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .broadbandchild-item {
+    flex-direction: column; /* Stack items vertically */
+  }
+  .card-d {
+    height: auto;
+    width: 66%;
+    margin-left: 0.5%;
+  }
+}

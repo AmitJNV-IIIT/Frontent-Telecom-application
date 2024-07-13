@@ -1,0 +1,41 @@
+.spinner-main {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.spinner-main-coupon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.spinner {
+  width: 56px;
+  height: 56px;
+  border: 11.2px #474bff double;
+  border-left-style: solid;
+  border-radius: 50%;
+  animation: spinner-aib1d7 0.75s infinite linear;
+}
+
+@keyframes spinner-aib1d7 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-text {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.spinner-text-coupon {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}

@@ -1,0 +1,94 @@
+@import url('../../constants/Colors.css');
+
+.landing-body {
+  margin-top: 0;
+  padding: 0;
+  background: var(--main-background);
+  overflow-x: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.slider {
+  width: 85%;
+  margin-top: 8%;
+}
+
+.recharge-explore {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 25px;
+  gap: 20px;
+}
+
+.recharge-explore .plans-testimonials {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: 30rem;
+}
+
+.plans-testimonials-bg {
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.plans-header {
+  margin-bottom: 5vh;
+  text-align: center;
+  font-size: 30px;
+
+  padding-top: 1% !important;
+
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .recharge-explore {
+    display: none;
+  }
+
+  .plans-header {
+    text-align: center;
+    font-size: 24px;
+  }
+  .landing-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    width: 100%;
+  }
+  .landing-page-container {
+    margin-top: 10%;
+  }
+
+  .slider {
+    width: 85%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .landing-page-container {
+    margin-top: 5%;
+  }
+  .plans-header {
+    text-align: center;
+    font-size: 20px !important;
+    margin-bottom: 0vh !important;
+  }
+
+  .slider {
+    width: 85%;
+    margin-bottom: 5%;
+  }
+}

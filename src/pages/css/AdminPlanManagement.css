@@ -1,0 +1,19 @@
+.admin-plan-mgmt-main-div {
+  display: flex;
+  flex-direction: column;
+}
+.admin-plan-mgmt-main-div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 400px) {
+  .admin-plan-mgmt-main-div {
+  }
+}
+
+.pagination-prepaid-div {
+  display: flex;
+  margin-top: -4rem;
+  /* margin-left: 18rem; */
+}

@@ -1,0 +1,23 @@
+.services-card {
+  max-width: 100%;
+  margin-bottom: 1%;
+}
+
+.services-heading {
+  text-align: center;
+  font-size: 2px;
+}
+
+.services-grid {
+  display: flex;
+}
+
+.services-column {
+  flex: 1;
+  padding: 8px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.services-column:last-child {
+  border-right: none;
+}

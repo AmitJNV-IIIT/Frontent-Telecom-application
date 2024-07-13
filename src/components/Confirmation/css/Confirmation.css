@@ -1,0 +1,253 @@
+.confirmation-modal-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-image: linear-gradient(to bottom right, #18022d, #10022d); */
+  height: 75vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 5%;
+  z-index: 10000;
+
+  background-image: linear-gradient(to right, #0e054b, #000000);
+  /* z-index: 100000000; */
+}
+
+.confirmation-modal-cross {
+  margin-left: auto;
+}
+
+.confirmation-modal-wrapper button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-image: linear-gradient(to bottom right, #0080ff, #8000ff);
+  border-radius: 10px;
+  width: 50%;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1.2px solid white; /* Added white border */
+  font-size: 16px;
+}
+
+.confirmation-modal-wrapper button:hover {
+  /* border-width: 1.6px; */
+  border-radius: 20px;
+  border-image-source: conic-gradient(
+    in oklch from var(--gradient-angle),
+    var(--purple),
+    var(--orange),
+    var(--yellow),
+    var(--blue),
+    var(--purple)
+  );
+  border-image-slice: 1 1 1 1;
+  animation: spin 2s linear infinite;
+}
+.plan-chosen-confirmation {
+  width: 100% !important;
+}
+@keyframes spin {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+.plan-chosen {
+  width: 100%;
+  /* height: 50px; */
+  /* z-index: 99999; */
+}
+.confirm-purchase-container {
+  /* position: absolute;
+    top: 0; 
+    left: 0; */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  border-radius: 15px;
+  height: 30px;
+  /* z-index: 1;  */
+}
+
+.plan-selected {
+  color: white;
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.coupon-container {
+  display: flex;
+  align-items: center;
+
+  width: 95%;
+  border-radius: 15px;
+  height: 1rem !important;
+  background: linear-gradient(90deg, #8a2be2 0%, #ff00ff 100%);
+  justify-content: space-between;
+  padding: 3%;
+  color: white;
+  font-size: 14px;
+  margin-top: -2vh;
+}
+
+.external-coupon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
+  border-radius: 15px;
+  height: 25% !important;
+  justify-content: space-between;
+  padding: 3%;
+  color: white;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.external-coupon-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1vh;
+}
+
+.external-coupon-description-sub-a {
+  display: flex;
+  flex-direction: column;
+  height: 1vh;
+}
+
+.offer {
+  font-size: 10px;
+}
+.code {
+  font-size: 10px;
+}
+
+.external-coupon-description-sub-b {
+  font-size: 10px;
+}
+
+.steps-to-redeem {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.steps-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120%;
+}
+
+.terms-and-conditons-external {
+  font-size: 10px;
+  margin-top: 20px;
+  color: white;
+}
+
+.step-title {
+  font-size: 10px;
+}
+
+.step-desc {
+  font-size: 7px;
+  margin-top: 7px;
+}
+
+.step {
+  width: 50px;
+}
+
+.external-coupon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .confirmation-modal-wrapper {
+    padding: 10px;
+    height: 43%;
+    display: flex;
+    gap: 9%;
+    width: 35%;
+  }
+
+  .plan-selected,
+  .coupon-container,
+  .external-coupon-container {
+    font-size: 12px; /* Adjusts font size for readability */
+  }
+  .plan-selected {
+    margin: -1vw;
+  }
+
+  .steps-to-redeem,
+  .terms-and-conditons-external,
+  .step-title,
+  .step-desc {
+    font-size: 9px; /* Adjusts step details to fit smaller displays */
+  }
+
+  .step {
+    width: 40px; /* Adjust step image container width */
+  }
+  .confirmation-modal-wrapper button {
+    margin-top: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .confirmation-modal-wrapper {
+    width: 67%; /* Adjusts height based on content */
+    padding: 10px;
+    height: 55%;
+    display: flex;
+    gap: 8%;
+  }
+
+  .plan-selected {
+    margin: -2vw;
+  }
+
+  .confirmation-modal-wrapper button {
+    width: 100%; /* Full width button for easier interaction */
+    padding: 12px 0; /* Increases padding for a larger touch target */
+    font-size: 13px; /* Ensures button text is still legible */
+    margin-top: 0px;
+  }
+
+  .plan-selected,
+  .coupon-container,
+  .external-coupon-container {
+    font-size: 10px; /* Further reduces font size for cramped spaces */
+  }
+
+  .steps-to-redeem,
+  .terms-and-conditons-external,
+  .step-title,
+  .step-desc {
+    font-size: 8px; /* Makes text smaller to fit the limited space */
+  }
+
+  .step {
+    width: 30px; /* Reduces the width of the step icons for space */
+  }
+}

@@ -1,0 +1,258 @@
+.feed-excitel-feedback-form {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  /* border: 2px solid #724d98; */
+  width: 70%;
+  height: 100%;
+  margin-bottom: 1.5rem;
+  margin-top: 5rem;
+  margin-left: 13%;
+  transition: all 250ms;
+}
+.feed-excitel-feedback-form:hover {
+  background-color: white;
+  color: white;
+}
+.selected-category {
+  background-color: linear-gradient(
+    to bottom right,
+    #0080ff,
+    #8000ff
+  ) !important;
+}
+.button-category-feed {
+  background-color: white; /* Default background */
+  color: black; /* Default text color */
+  border: 1px solid gray; /* Default border */
+}
+
+.button-selected {
+  background-color: blue !important; /* Selected background */
+  color: white; /* Selected text color */
+  border: 1px solid darkblue; /* Selected border */
+}
+
+.feed-excitel-feedback-form:hover .feed-button-group button {
+  background-color: black;
+  color: white;
+}
+
+.feed-excitel-feedback-form:hover .feed-subheading,
+.feed-excitel-feedback-form:hover .feed-category-subheading,
+.feed-excitel-feedback-form:hover .feed-form-label {
+  color: black;
+}
+
+.feed-excitel-feedback-form:hover .feedback-submit-btn {
+  background: linear-gradient(to bottom right, #0080ff, #8000ff);
+  color: white;
+}
+
+.feed-excitel-feedback-form:hover .feedback-textarea {
+  opacity: 1;
+}
+.feed-form textarea {
+  height: 20vh;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f0ccfc;
+  resize: both;
+  border: 10px solid black;
+  transition: all 250ms;
+}
+
+.feed-star-div {
+  display: flex;
+  /* background-color: gray; */
+  justify-content: space-between;
+}
+
+.feedback-star-hover {
+  background-color: transparent;
+}
+
+.feed-form input[type='submit'] {
+  padding: 10px 20px;
+  background-color: #8643b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  transition: background-color 0;
+  font-size: 20px;
+}
+
+.feed-form input[type='submit']:hover {
+  background-color: #6a3796;
+}
+
+.feed-form input[type='submit']:active {
+  color: black;
+}
+
+.feed-subheading {
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.feed-category-subheading {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.feed-form-label {
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.feed-gradient-text {
+  font-size: 16px;
+  /* background:linear-gradient(to bottom right, #0080ff, #8000ff);
+   */
+  color: #a9a9a9;
+  margin-bottom: 5%;
+}
+.feedback-submit-btn {
+  background: linear-gradient(to bottom right, #0080ff, #8000ff);
+  width: 20%;
+  margin-top: 2%;
+  border: unset;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: all 250ms;
+}
+
+.feedback-submit-btn:hover {
+  background: linear-gradient(to bottom right, #0080ff, #8000ff);
+}
+
+.feed-excitel-feedback-form:hover .feed-gradient-text {
+  color: #27374d;
+}
+
+.feedback-text-area-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feedback-textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  opacity: 1;
+  border-radius: 10px;
+  padding-top: 3%;
+  padding-left: 3%;
+}
+
+.feed-button-group {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -10px;
+  margin-bottom: 1%;
+}
+
+.feed-button-group button {
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  cursor: pointer;
+  white-space: nowrap;
+  flex: 1 0 auto;
+  margin: 10px;
+  padding-top: 2%;
+  transition: all 250ms;
+}
+
+.feed-button-group button:hover {
+  background: linear-gradient(to bottom right, #0080ff, #8000ff);
+  color: white;
+  border: 1px solid black;
+}
+
+.feed-button-selected {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* For devices with a width of up to 768px */
+@media (max-width: 768px) {
+  .feed-excitel-feedback-form {
+    width: 90%;
+    margin-left: 2.5%;
+    margin-right: 5%;
+  }
+
+  .feed-form textarea {
+    height: 15vh;
+  }
+
+  .feedback-submit-btn {
+    width: 50%;
+  }
+
+  .feed-button-group button {
+    width: 45%; /* Adjust button width for better fit */
+    padding-top: 2%;
+  }
+
+  .feedback-textarea {
+    height: 120px; /* Smaller textarea height */
+  }
+}
+
+/* For devices with a width of up to 400px */
+@media (max-width: 400px) {
+  .feed-excitel-feedback-form {
+    width: 86%;
+    margin-left: 4%;
+    margin-top: 3rem; /* Reduce top margin */
+    padding: 10px; /* Reduce padding */
+    padding-top: 6%;
+  }
+
+  .feed-form input[type='submit'] {
+    font-size: 16px; /* Smaller font size for smaller screens */
+  }
+
+  .feed-category-subheading {
+    margin-bottom: 6%;
+  }
+
+  .feedback-submit-btn {
+    width: 70%; /* Larger button width for easier access */
+    padding-top: 4%; /* Increase padding for better touch interaction */
+    padding-bottom: 4%;
+  }
+
+  .feed-button-group button {
+    width: 45%; /* Full width for buttons */
+    margin: 5px; /* Adjust margin */
+  }
+
+  .feedback-textarea {
+    height: 100px; /* Even smaller textarea height */
+  }
+}

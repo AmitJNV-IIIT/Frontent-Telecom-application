@@ -1,0 +1,12 @@
+.monthly-sales-cont {
+  height: '85%';
+  display: 'flex';
+  width: '100%';
+  /* padding:0 1rem; */
+  align-items: center;
+  flex-direction: column;
+}
+.monthly-sales-cont h2 {
+  margin-bottom: 1rem;
+  /* margin-bottom: 0; */
+}

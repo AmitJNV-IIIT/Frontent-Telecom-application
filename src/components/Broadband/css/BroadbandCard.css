@@ -1,0 +1,342 @@
+.card-broadband {
+  padding: 10px;
+  gap: 2rem;
+  width: 581px;
+  height: 55%;
+
+  background-image: linear-gradient(to bottom, #0b010d, #040235);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  transition: all 250ms;
+}
+
+.card-broadband:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+  border-image-source: conic-gradient(
+    in oklch from var(--gradient-angle),
+    var(--purple),
+    var(--orange),
+    var(--yellow),
+    var(--blue),
+    var(--purple)
+  );
+  border-image-slice: 1 3 1 1; /* Important for animation */
+  animation: spin 2s linear infinite;
+}
+
+:root {
+  --black: oklch(17.7% 0.105 262.48); /* Adjust as needed */
+  --purple: oklch(60% 0.37 294.7); /* Adjust as needed */
+  --orange: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --yellow: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --blue: oklch(37.33% 0.1751 332.82); /* Adjust as needed */
+  --black-alpha-50: color-mix(in oklch, var(--black), transparent);
+  --pink-purple: #260783; /* Your desired gradient start color */
+  --pink-magenta: #0f0b0f; /* Your desired gradient end color */
+}
+
+@property --gradient-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
+}
+
+@keyframes spin {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+.carousel-broadband {
+  width: 95%;
+  margin-left: 2%;
+  /* margin-right: 1%; */
+  gap: 2rem;
+  /* background-color: #ccc; */
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+  color: white;
+  text-align: center;
+}
+
+.card-title span {
+  display: inline-block;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white !important;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li button:hover {
+  background-color: #ebdbdb;
+}
+
+/* Customize active dot */
+.slick-dots li.slick-active button {
+  background-color: #fff;
+}
+
+.card-descritption {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  /* border-top: 0.5px solid grey;
+    border-bottom: 0.5px solid grey; */
+  /* background: linear-gradient(to right, grey, transparent, grey); */
+}
+
+.card-description {
+  position: relative;
+  text-align: center;
+}
+
+.card-description::before,
+.card-description::after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 30%;
+  height: 1px;
+  background-color: grey;
+}
+
+.card-description::before {
+  margin-left: -15%;
+}
+
+.card-description::after {
+  margin-left: 15%;
+}
+
+.card-descritption p {
+  color: rgb(247, 247, 247);
+  font-size: 12px;
+  margin: 5px 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.tick {
+  color: gray;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.card-button {
+  display: block;
+  width: 100%;
+  position: relative;
+  align-self: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.card-button:hover {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+.ott-section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ott-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
+}
+
+.ott-count {
+  margin-left: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.ott-logos {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.ott-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+/* .ott-img {
+    width: 30px;
+    height: 30px;
+  /* } */
+/* .slick-slide > div {
+  margin: 2rem;
+} */
+*/ .ott-count {
+  margin-left: 4px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.broadband-card-price-btn {
+  width: 94%;
+  height: 45px;
+  margin-bottom: 4%;
+  margin-left: 3%;
+  /* margin-top: 10px; */
+  /* margin: 1rem 1rem; */
+  border-radius: 0.75rem;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19px;
+  transition: all 0.2s;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: black;
+  z-index: 1;
+}
+
+.broadband-card-price-btn::after,
+.broadband-card-price-btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.broadband-card-price-btn::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+.broadband-card-price-btn::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background-image: linear-gradient(
+    172deg,
+    rgba(38, 3, 179, 0.5) 50%,
+    /* 50% opacity */ rgba(19, 7, 188, 0.5) 80%,
+    /* 50% opacity */ rgba(11, 0, 83, 0.5) 100% /* 50% opacity */
+  );
+
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.broadband-card-price-btn:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+  color: whitesmoke;
+}
+
+.broadband-card-price-btn:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.broadband-card-price-btn:hover {
+  color: white;
+}
+
+.broadband-card-price-btn:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+@media only screen and (max-width: 908px) {
+  .carousel {
+    margin: auto;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-descritption p {
+    font-size: 10px;
+  }
+
+  .ott-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card-button {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .carousel {
+    margin: auto;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-descritption p {
+    font-size: 9px;
+  }
+
+  .ott-img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .card-button {
+    font-size: 10px;
+  }
+}

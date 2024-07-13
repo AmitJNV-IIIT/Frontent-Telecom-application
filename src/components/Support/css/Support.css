@@ -1,0 +1,74 @@
+.container-support {
+  display: flex;
+  align-items: center;
+  color: white;
+  /* background-color: #171826 ; */
+  margin-top: 100px;
+}
+
+.leftContent {
+  padding-right: 16px; /* Adjust as needed */
+}
+
+.rightContent {
+  padding-left: 16px; /* Adjust as needed */
+}
+.accordion-summary {
+  height: 0 !important;
+  min-height: 6vh !important;
+}
+.purple-gradient-lighter {
+  background: linear-gradient(90deg, #8a3dd1 0%, #df53df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.image {
+  width: 100% !important; /* Adjust the width of the image as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.custom-card-faq {
+  width: 60% !important;
+  margin: auto !important;
+  margin-bottom: 1vh !important;
+  max-width: 100% !important;
+  background: linear-gradient(90deg, #642d97 0%, #872787 80%);
+}
+
+.FAQ-border {
+  margin: 0;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.support-category-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  margin: auto;
+  gap: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .FAQ-border {
+    font-size: 25px;
+  }
+  .rightContent {
+    display: none;
+  }
+  .support-category-container {
+    width: 90%;
+  }
+  .custom-card-faq {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .FAQ-border {
+    font-size: 40px;
+  }
+  .rightContent {
+    display: none;
+  }
+}

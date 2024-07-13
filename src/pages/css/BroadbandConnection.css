@@ -1,0 +1,65 @@
+.customLine {
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.BroadbandConnection-main {
+  background-color: #f2f3f4;
+  padding-top: 7%;
+  padding-right: 9%;
+}
+
+.recharge-cards-broad-con {
+  height: 48rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for mobile screens */
+
+  .container-wrapper {
+    display: flex; /* Stack filters and recharge cards vertically */
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%; /* Make container full width on mobile */
+  }
+
+  .filters {
+    width: 100%; /* Make filters and recharge cards full width on mobile */
+  }
+
+  .recharge-cards {
+    margin: 0 auto;
+    margin-top: -2%;
+  }
+  .customLine {
+    margin-left: 10px; /* Remove left margin for better mobile layout */
+    margin-top: 20px; /* Adjust top margin for spacing */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* Styles for mobile screens */
+
+  .container-wrapper {
+    display: flex; /* Stack filters and recharge cards vertically */
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%; /* Make container full width on mobile */
+  }
+
+  .filters {
+    width: 100%; /* Make filters and recharge cards full width on mobile */
+  }
+
+  .recharge-cards {
+    margin: 0 auto;
+    margin-top: -28%;
+  }
+  .customLine {
+    margin-left: 10px; /* Remove left margin for better mobile layout */
+    margin-top: 20px; /* Adjust top margin for spacing */
+  }
+}

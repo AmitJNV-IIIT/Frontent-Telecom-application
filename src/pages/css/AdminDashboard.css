@@ -1,0 +1,203 @@
+.dasboard-conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  /* height: 130vh; */
+  margin-top: 7rem;
+  padding: 0 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.top-section,
+.bottom-section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 48.5%;
+  height: 45vh;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(120, 117, 117);
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vh;
+}
+
+.section1 {
+  background-color: white;
+  /* overflow-x: scroll; */
+}
+
+.section2 {
+  /* overflow: scroll; */
+  background-color: white;
+}
+
+.section3 {
+  background-color: white;
+
+  /* height: fit-content; */
+}
+
+.section4 {
+  background-color: white;
+  /* overflow-y: scroll; */
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.adminbox {
+  padding: 20px;
+  margin: 10px;
+  width: 23%;
+  min-height: 70%;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(120, 117, 117);
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+/* Display boxes in a row in desktop view */
+.head-up-section {
+  height: max-content;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-weight: 400;
+}
+.summary-value {
+  font-size: 30px;
+  color: rgb(49, 89, 144);
+}
+.admin-value0 {
+  color: purple;
+}
+.admin-value3 {
+  color: violet;
+}
+.admin-value2 {
+  color: orange;
+}
+.admin-value1 {
+  color: green;
+}
+.text-summary {
+  font-weight: 400;
+  /* color: darkolivegreen; */
+}
+
+/* Change layout for tablet and mobile view */
+@media (max-width: 768px) {
+  .head-up-section {
+    flex-wrap: wrap;
+  }
+
+  .adminbox {
+    flex: 0 0 50%;
+    max-width: 46%;
+  }
+}
+
+@media (min-width: 800px) {
+  /* .section2 {
+      /* overflow-x: scroll; */
+
+  /* } */
+
+  .bottom-section .section {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    width: max-content;
+    height: 40vh;
+    overflow-y: hidden;
+  }
+  .dasboard-conatiner {
+    height: max-content;
+  }
+  .top-section,
+  .bottom-section {
+    /* margin-top: 5rem; */
+    height: max-content;
+  }
+  .section1 {
+    height: 40vh;
+    overflow-x: scroll;
+    padding: 0 2rem;
+  }
+
+  .section2 {
+    /* overflow: scroll; */
+    padding: 2rem;
+    overflow-x: scroll;
+    height: fit-content;
+    /* width:100%; */
+  }
+
+  .section3 {
+    overflow-y: scroll;
+    margin-top: 2rem;
+    height: max-content;
+  }
+
+  .section4 {
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .adminbox {
+    flex: 50%;
+    max-width: 100%;
+  }
+  .section {
+    width: 100%;
+  }
+  .section1 {
+    height: 40vh;
+    overflow-x: scroll;
+    padding: 0 2rem;
+  }
+
+  .section2 {
+    /* overflow: scroll; */
+    padding: 2rem;
+    overflow-x: scroll;
+    height: fit-content;
+    /* width:100%; */
+  }
+
+  .section3 {
+    overflow-y: scroll;
+    margin-top: 2rem;
+    height: max-content;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .section4 {
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    padding: 0;
+  }
+}

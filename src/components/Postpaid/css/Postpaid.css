@@ -1,0 +1,63 @@
+.postpaid-recharge-card {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.postpaid-main-div {
+  display: flex;
+  background-image: linear-gradient(to bottom, #0b010d, #040235);
+  flex-direction: column;
+  width: 100vw;
+  height: fit-content;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.sub-navbar {
+  /* background-image: linear-gradient(to bottom, #090A18, #410754); */
+  margin-top: 6% !important;
+  z-index: 10;
+  /* padding-bottom: 25px; */
+}
+
+.navbar {
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  /* .postpaid-main-div{
+    /* Adjustments for the main div */
+  /* } */
+  .postpaid-recharge-card {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .sub-navbar {
+    padding-top: 4%; /* Slightly less padding */
+    padding-bottom: 20px;
+  }
+
+  .navbar {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .postpaid-main-div {
+    height: 670px;
+    overflow-y: hidden;
+  }
+  .postpaid-recharge-card {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .sub-navbar {
+    padding-top: 3%;
+    padding-bottom: 15px;
+  }
+
+  .navbar {
+    padding-top: 10px;
+  }
+}

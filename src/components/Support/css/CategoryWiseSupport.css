@@ -1,0 +1,16 @@
+.support-category-card {
+  width: 9vh;
+  height: fit-content;
+  border-radius: 0px;
+  transition: border-radius 0.3s ease;
+}
+
+.support-category-card:hover {
+  border-radius: 20px;
+  background: linear-gradient(90deg, #92b0dc 0%, #8869e8 70.5%);
+}
+
+.support-category-icon {
+  font-size: 50px;
+  margin: 16px; /* Use margin instead of theme.spacing */
+}

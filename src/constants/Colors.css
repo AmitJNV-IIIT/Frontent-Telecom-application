@@ -1,0 +1,19 @@
+:root {
+  --text-main-heading: linear-gradient(90deg, #8a2be2 0%, #ff00ff 100%);
+  --critical-button: linear-gradient(
+    to right bottom,
+    rgb(0, 128, 255),
+    rgb(128, 0, 255)
+  );
+  --main-background: #0b010d;
+  --all-page-background: linear-gradient(to bottom, #0b010d, #040235);
+  --navbar-background: #090a18;
+  --text-link: rgb(163, 147, 235);
+
+  --price-text: linear-gradient(
+    172deg,
+    rgba(38, 3, 179, 0.5) 50%,
+    rgba(19, 7, 188, 0.5) 80%,
+    rgba(11, 0, 83, 0.5) 100%
+  );
+}

@@ -1,0 +1,267 @@
+.prepaid-recharge-modal-main {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  /* gap: 1.25rem; */
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.prepaid-modal-subscriptions {
+  margin-right: auto;
+  margin-top: 0.5rem;
+  font-weight: bolder;
+}
+
+/* .prepaid-modal {
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      border: 2px solid #ffffff30;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #ffffff1a;
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 20px 50px;
+      align-items: center;
+  } */
+
+.prepaid-modal-cross {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.prepaid-details-card {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: 1rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  /* top: 53.5%;
+      left: 60.7%; */
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  /* border: 2px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.1); */
+  padding: 50px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ott-subs-plans {
+  border: 1px;
+  border-radius: 0.75rem;
+  background: rgb(120, 133, 153);
+  background: linear-gradient(
+    to right bottom,
+    rgb(0, 128, 255),
+    rgb(128, 0, 255)
+  );
+  padding: 5px 8px;
+  color: aliceblue;
+  margin-right: auto;
+  font-size: 10px;
+}
+
+.prepaid-modal-price {
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.prepaid-plan-details {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.prepaid-plan-table {
+  border-collapse: collapse;
+  padding: 5px 8px;
+}
+
+.prepaid-plan-price {
+  display: flex;
+  margin: 0;
+  align-items: self-start;
+  font-size: 20px;
+}
+
+.prepaid-card-details-div {
+  /* margin: 0; */
+  all: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.prepaid-plan-details {
+  margin-bottom: 20px;
+}
+
+.prepaid-table-desc {
+  border: 1px solid #c7c8cc;
+  border-radius: 0.25rem;
+  padding: 5px 8px;
+}
+
+/* .prepaid-recharge-btn {
+  margin-top: 15px;
+  width: 180px;
+  height: 30px;
+  border: 2px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 0.8em;
+  font-weight: 550;
+  margin-bottom: 18px;
+}
+
+.prepaid-recharge-btn:hover {
+  background: #535457;
+  color: white;
+  font-size: 1em;
+} */
+.prepaid-recharge-btn {
+  background: black;
+  font-size: 0.8em;
+  font-weight: 500;
+  cursor: pointer;
+  border: unset;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-size: 1.34em;
+  color: white;
+  transition: all 1s;
+}
+
+.prepaid-recharge-btn:hover {
+  background-image: linear-gradient(to bottom right, #0080ff, #8000ff);
+  /* transition: all 500ms */
+}
+.subscriptions-div-prepaid {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.prepaid-details-card-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 0.1rem;
+}
+
+.subscriptions-div-prepaid-images {
+  display: flex;
+  gap: 3px;
+}
+
+.prepaid-modal-notes {
+  font-weight: 500;
+  font-size: 12px;
+  color: #b4b4b8;
+  text-align: left;
+}
+
+/* For viewport width up to 768px */
+@media only screen and (max-width: 768px) {
+  .prepaid-recharge-modal-main {
+    overflow-y: scroll;
+  }
+  .prepaid-modal-cross {
+    margin-left: auto; /* Centering the close button */
+    margin-top: 10px; /* Adjusting space between close button and top */
+  }
+
+  .prepaid-details-card {
+    padding: 20px; /* Adjusting padding for smaller screens */
+  }
+
+  .prepaid-plan-details {
+    font-size: 16px; /* Adjusting font size for smaller screens */
+  }
+
+  .prepaid-plan-price {
+    font-size: 18px; /* Adjusting font size for smaller screens */
+  }
+
+  .prepaid-recharge-btn {
+    width: 150px; /* Adjusting button width for smaller screens */
+    height: 25px; /* Adjusting button height for smaller screens */
+    font-size: 0.7em; /* Adjusting font size for smaller screens */
+    margin-bottom: 10px;
+    padding-bottom: 1.5rem; /* Adjusting space below button for smaller screens */
+  }
+
+  .prepaid-details-card-image {
+    width: 30px; /* Adjusting image size for smaller screens */
+    height: 30px; /* Adjusting image size for smaller screens */
+  }
+
+  .prepaid-modal-notes {
+    font-size: 10px; /* Adjusting font size for smaller screens */
+  }
+}
+
+/* For viewport width up to 400px */
+@media only screen and (max-width: 400px) {
+  .prepaid-recharge-modal-main {
+    overflow-y: scroll;
+  }
+  .prepaid-modal-cross {
+    margin-left: auto; /* Centering the close button */
+    margin-top: 10px; /* Adjusting space between close button and top */
+  }
+  .prepaid-details-card {
+    padding: 15px; /* Further adjusting padding for smallest screens */
+  }
+
+  .prepaid-plan-details {
+    font-size: 14px; /* Further adjusting font size for smallest screens */
+  }
+
+  .prepaid-plan-price {
+    font-size: 16px; /* Further adjusting font size for smallest screens */
+  }
+
+  .prepaid-recharge-btn {
+    width: 130px; /* Further adjusting button width for smallest screens */
+    height: 22px; /* Further adjusting button height for smallest screens */
+    font-size: 0.6em; /* Further adjusting font size for smallest screens */
+    margin-bottom: 5px; /* Further adjusting space below button for smallest screens */
+  }
+
+  .prepaid-details-card-image {
+    width: 25px; /* Further adjusting image size for smallest screens */
+    height: 25px; /* Further adjusting image size for smallest screens */
+  }
+
+  .prepaid-modal-notes {
+    font-size: 9px; /* Further adjusting font size for smallest screens */
+  }
+}

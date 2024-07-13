@@ -1,0 +1,126 @@
+.btn-group {
+  display: flex;
+  width: fit-content;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3px;
+  /* border: 1px; */
+  /* border-style: solid; */
+  padding: 6px 8px;
+  border-radius: 1.25rem;
+  /* border-color: #DDDDDD; */
+  /* margin-top: 8%; */
+  background-color: #090a18;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 40px linear-gradient(to right, rgb(0, 0, 0), #1b0620);
+}
+
+/* .sub-navbar-wrapper{
+  background-color: red;
+} */
+
+.sub-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-navbar-broadband {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-subnav {
+  padding: 10px 15px;
+  border: unset;
+  border-radius: 15px;
+  color: darkgray;
+  z-index: 1;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 250ms;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.btn-subnav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+
+  transition: all 250ms;
+}
+
+.btn-subnav:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+.btn-subnav:hover::before {
+  width: 100%;
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.sub-navbar-broadband {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14vh !important;
+}
+
+.subnav-btn-click {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+/* For viewport width up to 768px */
+@media only screen and (max-width: 768px) {
+  .sub-nav {
+    width: 600px;
+  }
+  .btn-group {
+    width: 90%; /* Adjusting width for smaller screens */
+    padding: 6px 10px; /* Adjusting padding for smaller screens */
+    margin-top: 10%; /* Adjusting margin top for smaller screens */
+  }
+
+  .btn-subnav {
+    padding: 8px 12px;
+    font-size: 12px; /* Adjusting font size for smaller screens */
+  }
+}
+
+/* For viewport width up to 400px */
+@media only screen and (max-width: 400px) {
+  .sub-nav {
+    width: 350px;
+    margin-top: 0px;
+  }
+  .btn-group {
+    width: 95%; /* Further adjusting width for smallest screens */
+    /* Further adjusting padding for smallest screens */
+    /* margin-top: 18%; */
+    margin-left: 2%;
+    margin-right: 2%; /* Further adjusting margin top for smallest screens */
+  }
+  .sub-navbar-broadband {
+    margin-top: 7vh !important;
+  }
+  .btn-subnav {
+    padding: 6px 10px; /* Further adjusting padding for smallest screens */
+    font-size: 10px; /* Further adjusting font size for smallest screens */
+  }
+}

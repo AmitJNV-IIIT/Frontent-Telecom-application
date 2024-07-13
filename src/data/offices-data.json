@@ -1,0 +1,101 @@
+[
+  {
+    "OfficeID": "1",
+    "OfficeName": "Excitel Main",
+    "Address": "Infospace Tower, Gurugram, India",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM",
+    "GoogleMapURI": "https://maps.app.goo.gl/6mJYBYGbF1ZZBXMD7",
+    "Latitude": 28.51012893130186,
+    "Longitude": 77.0728887946617,
+    "Phone": "+919293456782"
+  },
+  {
+    "OfficeID": "2",
+    "OfficeName": "Excitel Secondary",
+    "Address": "Oxygen Business Park, Noida, India",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "6:00 PM",
+    "GoogleMapURI": "https://maps.app.goo.gl/MweEEx6msSbnhA5a9",
+    "Latitude": 28.49712469152107,
+    "Longitude": 77.43437905233259,
+    "Phone": "+919293456992"
+  },
+  {
+    "OfficeID": "3",
+    "OfficeName": "Excitel Store",
+    "Address": "Smartworks M-Agile, Pune, India",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM",
+    "GoogleMapURI": "https://maps.app.goo.gl/B2JYJFMVLPQrAdaK9",
+    "Latitude": 18.556112253581947,
+    "Longitude": 73.77686573464948,
+    "Phone": "+919293467782"
+  },
+  {
+    "OfficeID": "4",
+    "OfficeName": "Excitel South Side",
+    "Address": "Divyasree Trinity, Hyderabad, India",
+    "OpenTime": "9:30 AM",
+    "CloseTime": "5:30 PM",
+    "GoogleMapURI": "https://maps.app.goo.gl/G7DG4Vt8vWpTX9eB8",
+    "Latitude": 17.443513403336947,
+    "Longitude": 78.37445283557835,
+    "Phone": "+919293456782"
+  },
+  {
+    "OfficeID": "5",
+    "OfficeName": "Excitel City Office",
+    "Address": " 2870, Building, Bengaluru, India",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM",
+    "GoogleMapURI": "https://maps.app.goo.gl/yhRPKNujYX9bP1E79",
+    "Latitude": 12.982289460298231,
+    "Longitude": 77.69735351900194,
+    "Phone": "+919293456782"
+  },
+  {
+    "OfficeID": "6",
+    "OfficeName": "Excitel Spaces",
+    "Address": "Cyber City, Gurugram, India",
+    "OpenTime": "10:30 AM",
+    "CloseTime": "6:30 PM",
+    "GoogleMapURI": "https://maps.app.goo.gl/DaR5V6Aai37Di9Ry9",
+    "Latitude": 28.548002787372866,
+    "Longitude": 77.30590126875018,
+    "Phone": "+919293456782"
+  },
+  {
+    "OfficeID": "7",
+    "OfficeName": "Excitel South Side",
+    "Address": "131 South Side St, Mumbai, India",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "3:30 PM",
+    "GoogleMapURI": "https://maps.app.goo.gl/dxCZiapG1mEPSEGY7",
+    "Latitude": 13.0827,
+    "Longitude": 80.2707,
+    "Phone": "+919293456782"
+  },
+  {
+    "OfficeID": "8",
+    "OfficeName": "Excitel Central",
+    "Address": "141 Central St, Gurugram, India",
+    "OpenTime": "11:00 AM",
+    "CloseTime": "7:00 PM",
+    "GoogleMapURI": "https://maps.app.goo.gl/EGiwrd7VAXiQMQeB8",
+    "Latitude": 17.385,
+    "Longitude": 78.4867,
+    "Phone": "+919293456782"
+  },
+  {
+    "OfficeID": "9",
+    "OfficeName": "Excitel Suburban",
+    "Address": "151 Suburban St, Gurugram, India",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM",
+    "GoogleMapURI": "https://maps.app.goo.gl/JHxG88fMTJj2aA8B9",
+    "Latitude": 28.5355,
+    "Longitude": 77.391,
+    "Phone": "+919293456782"
+  }
+]

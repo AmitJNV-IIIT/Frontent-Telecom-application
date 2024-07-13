@@ -1,0 +1,256 @@
+.prepaid-main-page-div {
+  overflow-x: hidden;
+}
+
+.prepaid-no-plans {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.navbar {
+  /* background-image: linear-gradient(to bottom, rgb(0, 0, 0), #090A18); */
+  padding-top: 20px;
+}
+.prepaid-main-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), #121213);
+  flex-wrap: wrap; /* Add this rule */
+}
+
+.prepaid-main {
+  background-image: linear-gradient(to bottom, #0b010d, #040235);
+  /* background-color: #090A18; */
+  overflow-y: hidden;
+  height: fit-content;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.filters {
+  margin-left: 60px;
+}
+
+.recharge-cards {
+  height: 40rem;
+}
+.subscription-echarge-cards {
+  height: 40rem;
+}
+
+.sub-navbar {
+  /* background-image: linear-gradient(to bottom, #090A18, #410754); */
+  margin-top: 5% !important;
+  z-index: 10;
+  /* padding-bottom: 25px; */
+}
+/* grid system */
+
+.container-prepaid {
+  width: 100%;
+  padding-top: 25px;
+  margin-left: 3%;
+}
+
+.pagination-prepaid-div {
+  display: flex;
+  color: white;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-left: 15vw;
+}
+
+.container-wrapper {
+  margin-left: 5rem;
+}
+
+.row {
+  width: 91%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+/* 2/12 */
+.col-2 {
+  width: 16.66%;
+}
+
+/* 3/12 */
+.col-3 {
+  width: 25%;
+}
+
+/* 4/12 */
+.col-4 {
+  width: 33.33%;
+}
+
+/* 5/12 */
+.col-5 {
+  width: 41.66%;
+}
+
+/* 6/12 */
+.col-6 {
+  width: 50%;
+}
+
+/* 7/12 */
+.col-7 {
+  width: 58.33%;
+}
+
+/* 8/12 */
+.col-8 {
+  width: 66.66%;
+}
+
+/* 9/12 */
+.col-9 {
+  width: 75%;
+}
+
+/* 10/12 */
+.col-10 {
+  width: 83.33%;
+}
+
+/* 11/12 */
+.col-11 {
+  width: 91.66%;
+}
+
+/* 12/12 */
+.col-12 {
+  width: 100%;
+}
+
+.pagination-component {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+  outline: none;
+  color: grey;
+  margin-top: 10%;
+  /* background-color: yellow; */
+}
+/* For viewport width up to 768px */
+/* For viewport width up to 768px */
+@media only screen and (max-width: 768px) {
+  .row {
+    column-gap: 15px;
+    height: 39rem;
+  }
+  .navbar {
+    padding-top: 10px; /* Decrease top padding for smaller screens */
+  }
+
+  .col-8 {
+    margin-left: 18%;
+  }
+
+  .container-wrapper {
+    margin-left: -0.006rem;
+  }
+  .filters {
+    margin-left: 30px; /* Adjust margin for smaller screens */
+    display: none;
+  }
+
+  .container {
+    padding-top: 15px; /* Adjust top padding for smaller screens */
+  }
+
+  .pagination-prepaid-div {
+    display: flex;
+    color: white;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 2%;
+    margin-top: -6%;
+  }
+}
+
+/* For viewport width up to 400px */
+@media only screen and (max-width: 400px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 113%;
+  }
+  .navbar {
+    padding-top: 5px; /* Further decrease top padding for smallest screens */
+  }
+
+  .filters {
+    margin-left: 15px; /* Further adjust margin for smallest screens */
+  }
+
+  .container-wrapper {
+    margin-right: 2rem;
+  }
+
+  .container {
+    padding-top: 10px; /* Further adjust top padding for smallest screens */
+  }
+
+  .pagination-prepaid-div {
+    display: flex;
+    color: white;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 4%;
+  }
+
+  .pagination-component {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    outline: none;
+    color: grey;
+    margin-top: 21%;
+    /* background-color: yellow; */
+  }
+}
+
+.pagination-component:hover {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  outline: none;
+  border: none;
+  border: none;
+}
+
+.active-page {
+  list-style-type: none;
+  font-weight: bold;
+  color: white;
+  outline: none;
+  text-decoration: underline;
+}

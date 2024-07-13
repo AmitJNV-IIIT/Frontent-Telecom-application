@@ -1,0 +1,149 @@
+@import url('../../../../constants/Colors.css');
+
+.plan-form-card {
+  width: 110%;
+  background-color: white;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  border: 2rem;
+  border-radius: 15 px;
+}
+.admin-coupon-selected {
+  height: 2rem;
+  background-image: linear-gradient(to bottom right, #0080ff, #8000ff);
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  gap: 5rem;
+}
+.form-title {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+}
+
+.form-inputs {
+  margin-bottom: 4vh;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 5vh;
+}
+.logo-section {
+  display: flex;
+  width: 100%;
+  margin-left: -0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 440px) {
+  .plan-form-card {
+    width: 280px;
+  }
+  .logo-section {
+    margin-left: -2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .input-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.add-edit-submit-button {
+  background-color: black;
+  border-radius: 10px;
+  width: 30%;
+  /* padding: 0.4rem; */
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: white;
+  border: unset;
+  transition: all 250ms;
+  margin-top: -0.6rem;
+  /* margin-bottom: -1rem; */
+}
+
+.add-edit-submit-button:hover {
+  background: var(--critical-button);
+  cursor: pointer;
+}
+
+/*  
+  .add-coupon-button {
+   
+    margin-left: 20%;
+    margin-top: 3%;
+    display: inline-block;
+  } */
+/* .add-coupon-button {
+  display: inline-block;
+  margin-left: 7%;
+  margin-top: 0%;
+} */
+
+.custom-add-coupon-button {
+  color: black; /* Text color */
+  border-color: black; /* Outline color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+.custom-add-coupon-button:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.add-edit-btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selected-coupon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -1.5rem;
+}
+
+.prepaid-stacked-images {
+  display: flex;
+
+  bottom: 10px;
+  left: 10px;
+}
+
+.stacked-image {
+  width: 5%;
+  height: 5%;
+  flex-shrink: 0;
+  margin: 2px 3px;
+  position: relative;
+}
+.stacked-image-logo {
+  width: 70%;
+  height: 50%;
+  flex-shrink: 0;
+  position: relative;
+  padding-right: 0.125rem;
+  padding-top: -0.9rem;
+  margin-left: -1rem;
+  margin-top: -0.7rem;
+  /* margin-right: 0.123rem; */
+}
+
+.boxAlign {
+  display: flex;
+  margin-right: 2rem;
+}
+.edit-delete-button {
+  justify-content: center !important;
+  margin-top: -46px !important;
+}

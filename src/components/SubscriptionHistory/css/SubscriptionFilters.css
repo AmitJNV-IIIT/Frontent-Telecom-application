@@ -1,0 +1,336 @@
+.filter-desktop-subscriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-left: 20px;
+  box-shadow:
+    6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #0b010d, #040235);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  transition: all 0.5s;
+  color: darkgray;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.filter-heading {
+  display: flex;
+  align-self: self-start;
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: 500;
+  padding-left: 0.75rem;
+}
+
+.filterbydays-div-subscription {
+  margin-left: 3vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  align-content: space-evenly;
+  position: relative;
+}
+.subscription-filter-menu {
+  margin-left: 2vw;
+  text-align: justify;
+}
+.filterbydata-div {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.filters-text-subscription {
+  /* display: flex; */
+  /* gap: 120px; */
+  /* width: 270px; */
+  cursor: pointer;
+  justify-content: space-evenly;
+  position: relative;
+  font-size: 20px;
+
+  flex-direction: column;
+  width: 20vw;
+  /* padding-left: 2rem; */
+}
+.radio-btn {
+  margin-right: 2px;
+}
+.size {
+  display: flex;
+  flex: 1;
+  /* justify-content: flex-start; */
+  margin: 3%;
+}
+
+.numbers {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin: 3%;
+}
+
+/* .filters-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+   transition: all 250ms; 
+} 
+
+ .filters-text:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 500ms; 
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+} */
+
+.filters-text:hover::before {
+  width: 100%;
+}
+
+.filters-dividing-div {
+  margin-top: 15px;
+  border: 1px solid rgba(202, 196, 208, 1);
+  width: 100%;
+}
+.filter-mobile-subscription {
+  display: none;
+  transition: all 250ms;
+  /* width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-left: 20px;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+    margin-top: 10px; */
+  display: none;
+  flex-direction: column;
+  width: 250px;
+  height: fit-content; /* Adjust as needed based on parent */
+
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #0b010d, #040235);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  transition: all 0.5s;
+  color: darkgray;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #260783;
+}
+
+.filter-mobile-subscription:hover {
+  border-image-source: conic-gradient(
+    in oklch from var(--gradient-angle),
+    var(--purple),
+    var(--orange),
+    var(--yellow),
+    var(--blue),
+    var(--purple)
+  );
+  border-image-slice: 1 3 1 1; /* Important for animation */
+  animation: spin 2s linear infinite;
+
+  /* Maintain white border on prepaid-card-divider */
+  .prepaid-card-divider {
+    border: 1px solid white;
+  }
+}
+.subscription-status-menu {
+  display: 'flex';
+  flex-direction: 'column';
+
+  justify-content: 'space-between';
+  margin-left: '2vw';
+}
+
+/* Define custom properties for colors (optional) and animation properties */
+:root {
+  --black: oklch(17.7% 0.105 262.48); /* Adjust as needed */
+  --purple: oklch(60% 0.37 294.7); /* Adjust as needed */
+  --orange: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --yellow: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --blue: oklch(37.33% 0.1751 332.82); /* Adjust as needed */
+  --black-alpha-50: color-mix(in oklch, var(--black), transparent);
+  --pink-purple: #260783; /* Your desired gradient start color */
+  --pink-magenta: #0f0b0f; /* Your desired gradient end color */
+}
+
+@property --gradient-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
+}
+
+@keyframes spin {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+.filter-mobile-btn {
+  background: none;
+  border: unset;
+  color: white;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  transition: all 250ms;
+}
+
+.filter-category {
+  display: flex;
+  flex-direction: column;
+}
+.filterbydata-div-mobile-subscription {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  align-content: space-evenly;
+  position: relative;
+}
+
+.filterbydays-div-mobile-subscription {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  align-content: space-evenly;
+  position: relative;
+}
+
+@media only screen and (max-width: 786px) {
+  .filter-mobile-subscription {
+    display: none;
+  }
+
+  .filter-desktop-subscriptions {
+    display: block;
+    height: auto; /* Adjust height for smaller screens */
+    /* margin-left: 10px; Adjust margin for smaller screens */
+    margin-right: 10px; /* Adjust margin for smaller screens */
+    padding-left: 5px; /* Adjust padding for smaller screens */
+    padding-right: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .filter-heading {
+    font-size: 18px;
+    font-weight: 900; /* Adjust font size for smaller screens */
+    padding-left: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .filters-text-subscription {
+    width: auto; /* Allow text to wrap on smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .size,
+  .numbers {
+    margin: 2%; /* Adjust margin for smaller screens */
+  }
+}
+
+.generate-button-class {
+  margin-top: 2rem;
+}
+
+/* For viewport width up to 480px */
+@media only screen and (max-width: 480px) {
+  .filter-mobile-subscription {
+    display: block;
+    transform: translateY(-30%);
+    transform: translateX(-70%);
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    height: fit-content;
+    margin-bottom: 50px;
+  }
+  .subscription-filters-menu {
+    text-align: left !important;
+    margin-left: 2vw !important;
+    margin-top: 8px !important;
+  }
+  .subscription-status-menu {
+    text-align: left !important;
+    margin-left: 1vh !important;
+    margin-top: 8px !important;
+  }
+  .filter-main-div-subscription {
+    margin-left: 5px; /* Adjust margin for smallest screens */
+    margin-right: 5px;
+  }
+
+  .filter-desktop-subscriptions {
+    height: auto; /* Adjust height for smallest screens */
+    margin-left: 5px; /* Adjust margin for smallest screens */
+    margin-right: 5px; /* Adjust margin for smallest screens */
+    padding-left: 3px; /* Adjust padding for smallest screens */
+    padding-right: 3px;
+    display: none;
+    /* Adjust padding for smallest screens */
+  }
+
+  .filter-heading {
+    font-size: 16px; /* Adjust font size for smallest screens */
+    padding-left: 0.25rem; /* Adjust padding for smallest screens */
+  }
+
+  .filters-text-subscription {
+    width: auto; /* Allow text to wrap on smallest screens */
+    font-size: 10px; /* Adjust font size for smallest screens */
+    padding-left: 0rem;
+  }
+
+  .size,
+  .numbers {
+    margin: 1%; /* Further adjust margin for smallest screens */
+  }
+}

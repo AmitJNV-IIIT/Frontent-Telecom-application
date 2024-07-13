@@ -1,0 +1,191 @@
+.testimonial-card {
+  height: 60vh;
+  background: rgba(255, 255, 255, 0);
+  margin-top: -10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  /* height: 100%; */
+}
+.feedback-stars-testimonial {
+  font-size: 1.5rem;
+}
+.star {
+  color: #c59b08 !important;
+}
+.testimonial-card-container {
+  background-color: rgba(23, 22, 22, 0.87);
+  color: white;
+  border-color: black;
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+  flex-direction: column;
+  height: 50%;
+  gap: 7%;
+  transition: all 250ms;
+}
+
+.testimonial-card-container:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+  border-image-source: conic-gradient(
+    in oklch from var(--gradient-angle),
+    var(--purple),
+    var(--orange),
+    var(--yellow),
+    var(--blue),
+    var(--purple)
+  );
+  border-image-slice: 1 3 1 1; /* Important for animation */
+  animation: spin 2s linear infinite;
+}
+
+:root {
+  --black: oklch(17.7% 0.105 262.48); /* Adjust as needed */
+  --purple: oklch(60% 0.37 294.7); /* Adjust as needed */
+  --orange: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --yellow: oklch(36% 0.1014 349.76); /* Adjust as needed */
+  --blue: oklch(37.33% 0.1751 332.82); /* Adjust as needed */
+  --black-alpha-50: color-mix(in oklch, var(--black), transparent);
+  --pink-purple: #260783; /* Your desired gradient start color */
+  --pink-magenta: #0f0b0f; /* Your desired gradient end color */
+}
+
+@property --gradient-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
+}
+
+@keyframes spin {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+.testimonial-card-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.star-rating {
+  direction: rtl; /* Right to left for the star ordering */
+  font-size: 0; /* Remove space between inline-block elements */
+}
+
+.star-rating > input {
+  display: none; /* Hide the radio buttons */
+}
+
+.star-rating > label {
+  display: inline-block;
+  font-size: 32px; /* Size of the stars */
+  color: #ccc; /* Color of stars (not selected) */
+  cursor: pointer;
+  margin: 0;
+}
+
+.star-rating > label:before {
+  content: '★';
+}
+
+.star-rating > input:checked ~ label {
+  color: gold; /* Color when selected or hovered */
+}
+
+.star-rating > label:hover,
+.star-rating > label:hover ~ label {
+  color: gold; /* Change color on hover */
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .testimonial-card-container {
+    width: 30vw !important; /* Adjust width for better visibility on smaller screens */
+  }
+
+  .rate {
+    font-size: 24px; /* Smaller stars for smaller screens */
+  }
+}
+
+/* Responsive Styles for Mobile Phones */
+@media (max-width: 400px) {
+  .testimonial-card {
+    margin: 5px;
+    padding: 15px;
+  }
+
+  .testimonial-card-container {
+    width: 55vw !important; /* Increase width to utilize more screen space */
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4%;
+  }
+
+  .rate {
+    font-size: 20px; /* Even smaller stars for very small screens */
+  }
+
+  .rate:not(:checked) > label {
+    font-size: 20px; /* Adjust font size for star ratings */
+  }
+}

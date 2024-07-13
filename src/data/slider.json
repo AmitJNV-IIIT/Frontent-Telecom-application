@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "banner1",
+    "image": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/1.webp",
+    "imageMobile": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/1_mob.webp",
+    "header": "Experience broadband like Never Before",
+    "paragraph": "Feel the difference with committed speed of  <strong>1000 Mbps</strong>",
+    "button": "View our latest plans",
+    "className": "carousel-overlay-1",
+    "navigate": "broadband"
+  },
+  {
+    "id": 2,
+    "name": "banner2",
+    "image": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/2.webp",
+    "imageMobile": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/2_mob.webp",
+    "header": "Fast. Faster. Fastest",
+    "paragraph": "Feel the difference with committed speed of  <strong>1000 Mbps</strong>",
+    "button": "View our latest plans",
+    "className": "carousel-overlay-2",
+    "navigate": "prepaid"
+  },
+  {
+    "id": 3,
+    "name": "banner3",
+    "image": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/3.webp",
+    "imageMobile": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/3_mob.webp",
+    "header": "Get Entertainment your way",
+    "paragraph": "With the Best of Excitel TV Packages",
+    "button": "View our packages",
+    "className": "carousel-overlay-3",
+    "navigate": "broadband"
+  },
+  {
+    "id": 4,
+    "name": "banner4",
+    "image": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/4.webp",
+    "imageMobile": "https://ps-asde-ggn-batch3-frontend-assets.s3.amazonaws.com/static-assets/4_mob.webp",
+    "header": "We bring your devotion, home!",
+    "paragraph": "Live Darshan is now avilable on Excitel Digital TV!",
+    "button": "Learn more",
+    "className": "carousel-overlay-4",
+    "navigate": "broadband"
+  }
+]

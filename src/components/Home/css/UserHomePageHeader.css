@@ -1,0 +1,62 @@
+.userhomepageheader {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(1, 1, 38);
+  background-size: cover;
+}
+
+.welcomeuser {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcomeuser h1 {
+  margin-right: 15px;
+  background: linear-gradient(88.94deg, #38b7ff 0%, #d782ff 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  -webkit-background-clip: text;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  margin-right: 20px;
+  /* animation: glow 2s linear infinite alternate; */
+}
+.home-slider {
+  width: 100px;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow:
+      0 0 5px #38b7ff,
+      0 0 10px #38b7ff,
+      0 0 15px #38b7ff;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #d782ff,
+      0 0 15px #d782ff,
+      0 0 20px #d782ff;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .userhomepageheader {
+    width: 100vw;
+    height: 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(1, 1, 38);
+    background-size: cover;
+  }
+  .welcomeuser {
+    /* margin-top: 50px; */
+    display: none;
+    justify-content: center;
+  }
+}

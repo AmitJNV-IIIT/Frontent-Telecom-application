@@ -1,0 +1,161 @@
+.button-container-register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Horizontal space between buttons */
+  margin-top: 1rem; /* Adjust as needed */
+}
+
+.submit-button {
+  /* Add any specific styles for the submit button */
+}
+
+.resend-link {
+  cursor: pointer;
+  color: #b727d9;
+}
+
+.resend-link:hover {
+  text-decoration: underline;
+}
+
+.container_registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent !important;
+}
+
+.register-box {
+  margin-top: 15vh;
+  max-width: 40vw;
+  padding: 1vw;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent !important;
+}
+.user-details-box- {
+  max-width: 40vw;
+
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent !important;
+}
+
+.code-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.code-input-box {
+  text-align: center !important;
+  background-color: white !important;
+  margin: 0 0.5rem 0 0;
+  padding: 0% !important;
+  border-radius: 0.7vw !important;
+  color: black !important;
+  width: 2rem;
+  height: 2rem;
+}
+
+.styleAlign {
+  display: flex;
+  flex-direction: row !important;
+}
+.grid-image {
+  display: flex;
+  flex-direction: column !important;
+  margin-top: -5%;
+}
+.image-header {
+  background: linear-gradient(90deg, #8a2be2 0%, #ff00ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+
+.form-group {
+  margin-bottom: 2vh;
+  font-size: medium;
+}
+.form-group input {
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: small !important;
+}
+.input-textfield {
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: small !important;
+  font-weight: 700;
+}
+
+.white-label {
+  color: #ffffff;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 1vh;
+}
+
+.radio-group {
+  flex-direction: column !important;
+}
+
+.radio-button {
+  color: #ffffff !important;
+}
+
+.submit-button:disabled {
+  background: lightgrey !important;
+  color: darkgray !important;
+  font-weight: 900;
+  margin-left: 36%;
+}
+.submit-button:enabled {
+  background: var(--critical-button) !important;
+  color: white !important;
+  font-weight: 900;
+  margin-left: 36%;
+}
+
+.grid-container {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .register-box {
+    margin-top: 5vh;
+  }
+  .grid-container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .grid-image {
+    display: none !important;
+  }
+  .box {
+    max-width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .register-box {
+    margin-top: 10vh;
+    max-width: 78vw;
+  }
+  .css-1b3l6lk-MuiGrid-root {
+    max-width: 100% !important;
+  }
+}
+
+/* @media (min-width: 1200px){
+.css-1oqqzyl-MuiContainer-root {
+    max-width: 100% !important;
+}
+} */
